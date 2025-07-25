@@ -1,0 +1,55 @@
+/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+DALI "gpu" variant
+pip_train.epoch_size("Reader"):1281167
+/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/plugin/base_iterator.py:208: Warning: Please set `reader_name` and don't set last_batch_padded and size manually whenever possible. This may lead, in some situations, to missing some samples or returning duplicated ones. Check the Sharding section of the documentation for more details.
+  _iterator_deprecation_warning()
+current lr 1.00000e-04
+Traceback (most recent call last):
+  File "trainer_imagenet_mobilenetv2.py", line 446, in <module>
+    main()
+  File "trainer_imagenet_mobilenetv2.py", line 260, in main
+    train(train_loader, model, criterion_smooth, optimizer, epoch)
+  File "trainer_imagenet_mobilenetv2.py", line 314, in train
+    output = model(input_var)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torchvision/models/mobilenetv2.py", line 174, in forward
+    return self._forward_impl(x)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torchvision/models/mobilenetv2.py", line 166, in _forward_impl
+    x = self.features(x)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torchvision/models/mobilenetv2.py", line 64, in forward
+    return self.conv(x)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 176, in forward
+    return F.batch_norm(
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/functional.py", line 2512, in batch_norm
+    return torch.batch_norm(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 23.68 GiB of which 74.00 MiB is free. Process 3366411 has 15.11 GiB memory in use. Including non-PyTorch memory, this process has 8.48 GiB memory in use. Of the allocated memory 6.22 GiB is allocated by PyTorch, and 36.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

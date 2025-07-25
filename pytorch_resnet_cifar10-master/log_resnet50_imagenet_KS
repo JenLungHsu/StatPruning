@@ -1,0 +1,72 @@
+DALI "gpu" variant
+Traceback (most recent call last):
+  File "trainer_imagenet.py", line 503, in <module>
+    main()
+  File "trainer_imagenet.py", line 179, in main
+    train_loader = get_imagenet_iter_dali(
+  File "/ssd5/Roy/pytorch_resnet_cifar10-master/ImageNet_dali.py", line 59, in get_imagenet_iter_dali
+    pip_train.build()
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/pipeline.py", line 1080, in build
+    self.start_py_workers()
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/pipeline.py", line 1031, in start_py_workers
+    self._build_graph()
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/pipeline.py", line 819, in _build_graph
+    outputs = define_graph()
+  File "/ssd5/Roy/pytorch_resnet_cifar10-master/ImageNet_dali.py", line 25, in define_graph
+    images = self.res(images)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/ops/__init__.py", line 654, in __call__
+    _OperatorInstance(input_set, arg_inputs, args, self._init_args, self)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/ops/__init__.py", line 393, in __init__
+    self._inputs = _process_inputs(op._schema, self._spec, inputs, op._operator_name())
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/ops/__init__.py", line 320, in _process_inputs
+    spec.AddInput(inp.name, inp.device)
+RuntimeError: Assert on "IsCompatibleDevice(device, inp_dev, op_type)" failed: The input 0 for gpu operator `nvidia.dali.ops.RandomResizedCrop` is stored on incompatible device "cpu". Valid device is "gpu".
+DALI "gpu" variant
+/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/backend.py:94: Warning: nvidia-dali-cuda120 is no longer shipped with CUDA runtime. You need to install it separately. NPP is typically provided with CUDA Toolkit installation or an appropriate wheel. Please check https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#pip-wheels-installation-linux for the reference.
+  deprecation_warning(
+pip_train.epoch_size("Reader"):1281167
+/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/nvidia/dali/plugin/base_iterator.py:208: Warning: Please set `reader_name` and don't set last_batch_padded and size manually whenever possible. This may lead, in some situations, to missing some samples or returning duplicated ones. Check the Sharding section of the documentation for more details.
+  _iterator_deprecation_warning()
+current lr 1.00000e-02
+Traceback (most recent call last):
+  File "trainer_imagenet.py", line 503, in <module>
+    main()
+  File "trainer_imagenet.py", line 328, in main
+    train(train_loader, model, criterion_smooth, optimizer, epoch)
+  File "trainer_imagenet.py", line 380, in train
+    output = model(input_var)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torchvision/models/resnet.py", line 274, in _forward_impl
+    x = self.layer2(x)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torchvision/models/resnet.py", line 158, in forward
+    identity = self.downsample(x)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 176, in forward
+    return F.batch_norm(
+  File "/home/hsujenlung/miniconda3/envs/Roy/lib/python3.8/site-packages/torch/nn/functional.py", line 2512, in batch_norm
+    return torch.batch_norm(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 23.68 GiB of which 18.00 MiB is free. Process 1956929 has 15.22 GiB memory in use. Including non-PyTorch memory, this process has 8.43 GiB memory in use. Of the allocated memory 6.17 GiB is allocated by PyTorch, and 175.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

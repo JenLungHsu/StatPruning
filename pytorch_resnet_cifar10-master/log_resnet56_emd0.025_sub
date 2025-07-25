@@ -1,0 +1,1753 @@
+['resnet110', 'resnet1202', 'resnet20', 'resnet32', 'resnet44', 'resnet56', 'resnet56_emd0_025', 'resnet56_emd0_05', 'resnet56_emd0_075', 'resnet56_emd0_1']
+ResNet(
+  (conv1): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (8): BasicBlock(
+      (conv1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): LambdaLayer()
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): LambdaLayer()
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (6): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (7): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (linear): Linear(in_features=64, out_features=10, bias=True)
+)
+Files already downloaded and verified
+current lr 1.00100e-02
+Epoch: [0][0/196]	Time 3.126 (3.126)	Data 0.260 (0.260)	Loss 0.5354 (0.5354)	Prec@1 87.500 (87.500)
+Epoch: [0][50/196]	Time 0.076 (0.163)	Data 0.000 (0.005)	Loss 0.1313 (0.2215)	Prec@1 95.703 (93.497)
+Epoch: [0][100/196]	Time 0.105 (0.137)	Data 0.000 (0.003)	Loss 0.1040 (0.1753)	Prec@1 95.703 (94.466)
+Epoch: [0][150/196]	Time 0.108 (0.129)	Data 0.000 (0.002)	Loss 0.0897 (0.1473)	Prec@1 96.484 (95.206)
+Test: [0/79]	Time 0.782 (0.782)	Loss 0.2235 (0.2235)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.020 (0.037)	Loss 0.2886 (0.3527)	Prec@1 90.625 (91.008)
+ * Prec@1 91.110
+current lr 1.00094e-02
+Epoch: [1][0/196]	Time 0.346 (0.346)	Data 0.229 (0.229)	Loss 0.0551 (0.0551)	Prec@1 98.047 (98.047)
+Epoch: [1][50/196]	Time 0.108 (0.106)	Data 0.000 (0.005)	Loss 0.0821 (0.0680)	Prec@1 97.266 (97.687)
+Epoch: [1][100/196]	Time 0.112 (0.109)	Data 0.000 (0.003)	Loss 0.1034 (0.0666)	Prec@1 96.875 (97.761)
+Epoch: [1][150/196]	Time 0.113 (0.109)	Data 0.000 (0.002)	Loss 0.0495 (0.0663)	Prec@1 98.047 (97.760)
+Test: [0/79]	Time 0.195 (0.195)	Loss 0.1992 (0.1992)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.1934 (0.3051)	Prec@1 94.531 (91.284)
+ * Prec@1 91.680
+current lr 1.00075e-02
+Epoch: [2][0/196]	Time 0.330 (0.330)	Data 0.216 (0.216)	Loss 0.0465 (0.0465)	Prec@1 99.219 (99.219)
+Epoch: [2][50/196]	Time 0.113 (0.116)	Data 0.000 (0.005)	Loss 0.0581 (0.0565)	Prec@1 97.656 (98.277)
+Epoch: [2][100/196]	Time 0.110 (0.109)	Data 0.000 (0.002)	Loss 0.0456 (0.0557)	Prec@1 98.828 (98.337)
+Epoch: [2][150/196]	Time 0.114 (0.110)	Data 0.000 (0.002)	Loss 0.0848 (0.0564)	Prec@1 96.875 (98.370)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.1503 (0.1503)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.2009 (0.2862)	Prec@1 93.750 (91.468)
+ * Prec@1 91.760
+current lr 1.00044e-02
+Epoch: [3][0/196]	Time 0.346 (0.346)	Data 0.231 (0.231)	Loss 0.0736 (0.0736)	Prec@1 98.047 (98.047)
+Epoch: [3][50/196]	Time 0.113 (0.116)	Data 0.000 (0.005)	Loss 0.0609 (0.0509)	Prec@1 98.438 (98.644)
+Epoch: [3][100/196]	Time 0.099 (0.111)	Data 0.000 (0.003)	Loss 0.0372 (0.0536)	Prec@1 99.609 (98.623)
+Epoch: [3][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.0508 (0.0534)	Prec@1 98.438 (98.652)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.1713 (0.1713)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.2030 (0.2797)	Prec@1 92.188 (91.759)
+ * Prec@1 92.050
+current lr 1.00001e-02
+Epoch: [4][0/196]	Time 0.348 (0.348)	Data 0.235 (0.235)	Loss 0.0599 (0.0599)	Prec@1 98.438 (98.438)
+Epoch: [4][50/196]	Time 0.117 (0.117)	Data 0.000 (0.005)	Loss 0.0578 (0.0545)	Prec@1 98.438 (98.660)
+Epoch: [4][100/196]	Time 0.108 (0.114)	Data 0.000 (0.003)	Loss 0.0486 (0.0553)	Prec@1 99.219 (98.627)
+Epoch: [4][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.0730 (0.0565)	Prec@1 97.656 (98.593)
+Test: [0/79]	Time 0.195 (0.195)	Loss 0.1813 (0.1813)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.2124 (0.2680)	Prec@1 91.406 (91.621)
+ * Prec@1 91.870
+current lr 9.99459e-03
+Epoch: [5][0/196]	Time 0.351 (0.351)	Data 0.231 (0.231)	Loss 0.0649 (0.0649)	Prec@1 98.438 (98.438)
+Epoch: [5][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.0515 (0.0542)	Prec@1 98.828 (98.897)
+Epoch: [5][100/196]	Time 0.107 (0.114)	Data 0.000 (0.003)	Loss 0.0595 (0.0560)	Prec@1 98.047 (98.747)
+Epoch: [5][150/196]	Time 0.097 (0.112)	Data 0.000 (0.002)	Loss 0.0540 (0.0571)	Prec@1 98.438 (98.719)
+Test: [0/79]	Time 0.212 (0.212)	Loss 0.1844 (0.1844)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.2428 (0.3055)	Prec@1 92.188 (90.656)
+ * Prec@1 90.760
+current lr 9.98781e-03
+Epoch: [6][0/196]	Time 0.395 (0.395)	Data 0.281 (0.281)	Loss 0.0748 (0.0748)	Prec@1 97.656 (97.656)
+Epoch: [6][50/196]	Time 0.110 (0.117)	Data 0.000 (0.006)	Loss 0.0537 (0.0618)	Prec@1 98.047 (98.476)
+Epoch: [6][100/196]	Time 0.111 (0.114)	Data 0.000 (0.003)	Loss 0.0614 (0.0604)	Prec@1 98.047 (98.577)
+Epoch: [6][150/196]	Time 0.115 (0.113)	Data 0.000 (0.002)	Loss 0.0666 (0.0608)	Prec@1 98.047 (98.549)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.1600 (0.1600)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.023 (0.025)	Loss 0.2246 (0.2729)	Prec@1 93.750 (91.774)
+ * Prec@1 91.900
+current lr 9.97980e-03
+Epoch: [7][0/196]	Time 0.345 (0.345)	Data 0.231 (0.231)	Loss 0.0626 (0.0626)	Prec@1 98.438 (98.438)
+Epoch: [7][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.0583 (0.0639)	Prec@1 98.438 (98.552)
+Epoch: [7][100/196]	Time 0.109 (0.113)	Data 0.000 (0.003)	Loss 0.0477 (0.0633)	Prec@1 99.609 (98.492)
+Epoch: [7][150/196]	Time 0.111 (0.113)	Data 0.000 (0.002)	Loss 0.0485 (0.0653)	Prec@1 99.219 (98.360)
+Test: [0/79]	Time 0.216 (0.216)	Loss 0.1825 (0.1825)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.020 (0.024)	Loss 0.2034 (0.3036)	Prec@1 94.531 (90.916)
+ * Prec@1 91.090
+current lr 9.97057e-03
+Epoch: [8][0/196]	Time 0.346 (0.346)	Data 0.245 (0.245)	Loss 0.0717 (0.0717)	Prec@1 98.438 (98.438)
+Epoch: [8][50/196]	Time 0.111 (0.112)	Data 0.000 (0.005)	Loss 0.0443 (0.0694)	Prec@1 99.219 (98.177)
+Epoch: [8][100/196]	Time 0.115 (0.112)	Data 0.000 (0.003)	Loss 0.0546 (0.0727)	Prec@1 99.219 (98.074)
+Epoch: [8][150/196]	Time 0.116 (0.111)	Data 0.000 (0.002)	Loss 0.0616 (0.0768)	Prec@1 98.438 (97.879)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.2066 (0.2066)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.2258 (0.3449)	Prec@1 93.750 (89.752)
+ * Prec@1 90.020
+current lr 9.96012e-03
+Epoch: [9][0/196]	Time 0.358 (0.358)	Data 0.242 (0.242)	Loss 0.0788 (0.0788)	Prec@1 97.656 (97.656)
+Epoch: [9][50/196]	Time 0.109 (0.107)	Data 0.000 (0.005)	Loss 0.1065 (0.0839)	Prec@1 97.266 (97.763)
+Epoch: [9][100/196]	Time 0.114 (0.110)	Data 0.000 (0.003)	Loss 0.0676 (0.0884)	Prec@1 98.828 (97.544)
+Epoch: [9][150/196]	Time 0.113 (0.110)	Data 0.000 (0.002)	Loss 0.1172 (0.0957)	Prec@1 96.484 (97.271)
+Test: [0/79]	Time 0.210 (0.210)	Loss 0.3309 (0.3309)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3584 (0.3920)	Prec@1 89.844 (88.358)
+ * Prec@1 88.850
+current lr 9.94844e-03
+Epoch: [10][0/196]	Time 0.382 (0.382)	Data 0.267 (0.267)	Loss 0.1108 (0.1108)	Prec@1 96.875 (96.875)
+Epoch: [10][50/196]	Time 0.102 (0.114)	Data 0.000 (0.006)	Loss 0.1285 (0.1110)	Prec@1 95.703 (96.661)
+Epoch: [10][100/196]	Time 0.110 (0.109)	Data 0.000 (0.003)	Loss 0.2059 (0.1121)	Prec@1 94.531 (96.639)
+Epoch: [10][150/196]	Time 0.120 (0.110)	Data 0.000 (0.002)	Loss 0.1207 (0.1166)	Prec@1 95.312 (96.495)
+Test: [0/79]	Time 0.187 (0.187)	Loss 0.3456 (0.3456)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.019 (0.026)	Loss 0.4636 (0.4529)	Prec@1 83.594 (87.408)
+ * Prec@1 87.250
+current lr 9.93555e-03
+Epoch: [11][0/196]	Time 0.351 (0.351)	Data 0.239 (0.239)	Loss 0.1373 (0.1373)	Prec@1 95.703 (95.703)
+Epoch: [11][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.1622 (0.1434)	Prec@1 94.922 (95.650)
+Epoch: [11][100/196]	Time 0.100 (0.110)	Data 0.000 (0.003)	Loss 0.2272 (0.1486)	Prec@1 91.406 (95.405)
+Epoch: [11][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.1680 (0.1516)	Prec@1 94.531 (95.292)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.2301 (0.2301)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3187 (0.3658)	Prec@1 92.188 (88.863)
+ * Prec@1 88.880
+current lr 9.92144e-03
+Epoch: [12][0/196]	Time 0.343 (0.343)	Data 0.228 (0.228)	Loss 0.1719 (0.1719)	Prec@1 94.531 (94.531)
+Epoch: [12][50/196]	Time 0.111 (0.115)	Data 0.000 (0.005)	Loss 0.1422 (0.1665)	Prec@1 94.141 (94.638)
+Epoch: [12][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.1275 (0.1699)	Prec@1 96.094 (94.585)
+Epoch: [12][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2230 (0.1775)	Prec@1 92.969 (94.275)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.4092 (0.4092)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.022 (0.026)	Loss 0.5174 (0.4471)	Prec@1 81.250 (85.723)
+ * Prec@1 85.940
+current lr 9.90611e-03
+Epoch: [13][0/196]	Time 0.351 (0.351)	Data 0.241 (0.241)	Loss 0.1721 (0.1721)	Prec@1 93.359 (93.359)
+Epoch: [13][50/196]	Time 0.116 (0.116)	Data 0.000 (0.005)	Loss 0.1746 (0.1792)	Prec@1 95.312 (94.225)
+Epoch: [13][100/196]	Time 0.115 (0.114)	Data 0.000 (0.003)	Loss 0.1903 (0.1873)	Prec@1 94.531 (93.967)
+Epoch: [13][150/196]	Time 0.097 (0.112)	Data 0.000 (0.002)	Loss 0.1808 (0.1936)	Prec@1 94.531 (93.812)
+Test: [0/79]	Time 0.175 (0.175)	Loss 0.2729 (0.2729)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.3419 (0.4192)	Prec@1 89.062 (86.596)
+ * Prec@1 86.810
+current lr 9.88958e-03
+Epoch: [14][0/196]	Time 0.396 (0.396)	Data 0.286 (0.286)	Loss 0.1606 (0.1606)	Prec@1 95.703 (95.703)
+Epoch: [14][50/196]	Time 0.111 (0.117)	Data 0.000 (0.006)	Loss 0.2282 (0.1890)	Prec@1 92.969 (93.896)
+Epoch: [14][100/196]	Time 0.107 (0.114)	Data 0.000 (0.003)	Loss 0.2172 (0.2004)	Prec@1 93.750 (93.479)
+Epoch: [14][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.1979 (0.2050)	Prec@1 92.578 (93.331)
+Test: [0/79]	Time 0.202 (0.202)	Loss 0.3230 (0.3230)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4890 (0.4671)	Prec@1 84.375 (85.233)
+ * Prec@1 85.010
+current lr 9.87185e-03
+Epoch: [15][0/196]	Time 0.362 (0.362)	Data 0.242 (0.242)	Loss 0.1712 (0.1712)	Prec@1 94.922 (94.922)
+Epoch: [15][50/196]	Time 0.111 (0.116)	Data 0.000 (0.005)	Loss 0.1821 (0.2162)	Prec@1 94.141 (93.168)
+Epoch: [15][100/196]	Time 0.111 (0.114)	Data 0.000 (0.003)	Loss 0.2395 (0.2192)	Prec@1 92.578 (92.930)
+Epoch: [15][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2520 (0.2200)	Prec@1 91.797 (92.886)
+Test: [0/79]	Time 0.210 (0.210)	Loss 0.5048 (0.5048)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.020 (0.022)	Loss 0.5846 (0.5928)	Prec@1 83.594 (81.909)
+ * Prec@1 81.920
+current lr 9.85292e-03
+Epoch: [16][0/196]	Time 0.327 (0.327)	Data 0.241 (0.241)	Loss 0.2550 (0.2550)	Prec@1 92.188 (92.188)
+Epoch: [16][50/196]	Time 0.109 (0.114)	Data 0.000 (0.005)	Loss 0.2339 (0.2485)	Prec@1 92.969 (91.766)
+Epoch: [16][100/196]	Time 0.114 (0.113)	Data 0.000 (0.003)	Loss 0.2558 (0.2520)	Prec@1 92.188 (91.681)
+Epoch: [16][150/196]	Time 0.116 (0.113)	Data 0.000 (0.002)	Loss 0.3099 (0.2526)	Prec@1 89.844 (91.678)
+Test: [0/79]	Time 0.202 (0.202)	Loss 0.4508 (0.4508)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.025 (0.026)	Loss 0.6080 (0.5205)	Prec@1 82.031 (84.268)
+ * Prec@1 84.160
+current lr 9.83279e-03
+Epoch: [17][0/196]	Time 0.369 (0.369)	Data 0.257 (0.257)	Loss 0.2493 (0.2493)	Prec@1 91.797 (91.797)
+Epoch: [17][50/196]	Time 0.114 (0.110)	Data 0.000 (0.005)	Loss 0.2624 (0.2409)	Prec@1 89.844 (92.019)
+Epoch: [17][100/196]	Time 0.110 (0.112)	Data 0.000 (0.003)	Loss 0.1249 (0.2451)	Prec@1 97.656 (92.048)
+Epoch: [17][150/196]	Time 0.110 (0.112)	Data 0.000 (0.002)	Loss 0.2164 (0.2491)	Prec@1 93.359 (91.828)
+Test: [0/79]	Time 0.209 (0.209)	Loss 0.5452 (0.5452)	Prec@1 84.375 (84.375)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5948 (0.5980)	Prec@1 80.469 (80.821)
+ * Prec@1 80.670
+current lr 9.81147e-03
+Epoch: [18][0/196]	Time 0.383 (0.383)	Data 0.273 (0.273)	Loss 0.2524 (0.2524)	Prec@1 93.359 (93.359)
+Epoch: [18][50/196]	Time 0.103 (0.112)	Data 0.000 (0.006)	Loss 0.2996 (0.2626)	Prec@1 89.453 (91.445)
+Epoch: [18][100/196]	Time 0.114 (0.110)	Data 0.000 (0.003)	Loss 0.3397 (0.2670)	Prec@1 89.844 (91.228)
+Epoch: [18][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2295 (0.2669)	Prec@1 92.578 (91.261)
+Test: [0/79]	Time 0.231 (0.231)	Loss 0.3541 (0.3541)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.024 (0.027)	Loss 0.5749 (0.5098)	Prec@1 81.250 (83.364)
+ * Prec@1 83.550
+current lr 9.78897e-03
+Epoch: [19][0/196]	Time 0.356 (0.356)	Data 0.240 (0.240)	Loss 0.2569 (0.2569)	Prec@1 92.188 (92.188)
+Epoch: [19][50/196]	Time 0.116 (0.116)	Data 0.000 (0.005)	Loss 0.2141 (0.2699)	Prec@1 93.359 (90.993)
+Epoch: [19][100/196]	Time 0.112 (0.109)	Data 0.000 (0.003)	Loss 0.2512 (0.2663)	Prec@1 91.406 (91.310)
+Epoch: [19][150/196]	Time 0.109 (0.110)	Data 0.000 (0.002)	Loss 0.2423 (0.2717)	Prec@1 92.188 (91.124)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.4657 (0.4657)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5298 (0.5531)	Prec@1 84.375 (82.047)
+ * Prec@1 82.150
+current lr 9.76528e-03
+Epoch: [20][0/196]	Time 0.356 (0.356)	Data 0.237 (0.237)	Loss 0.2779 (0.2779)	Prec@1 91.797 (91.797)
+Epoch: [20][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.2727 (0.2748)	Prec@1 91.797 (90.816)
+Epoch: [20][100/196]	Time 0.096 (0.112)	Data 0.000 (0.003)	Loss 0.3165 (0.2737)	Prec@1 89.062 (90.845)
+Epoch: [20][150/196]	Time 0.115 (0.110)	Data 0.000 (0.002)	Loss 0.3245 (0.2751)	Prec@1 88.281 (90.837)
+Test: [0/79]	Time 0.198 (0.198)	Loss 0.5426 (0.5426)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6232 (0.5922)	Prec@1 75.000 (81.495)
+ * Prec@1 81.840
+current lr 9.74043e-03
+Epoch: [21][0/196]	Time 0.367 (0.367)	Data 0.250 (0.250)	Loss 0.2115 (0.2115)	Prec@1 93.750 (93.750)
+Epoch: [21][50/196]	Time 0.112 (0.116)	Data 0.000 (0.005)	Loss 0.3031 (0.2764)	Prec@1 89.844 (91.016)
+Epoch: [21][100/196]	Time 0.115 (0.114)	Data 0.000 (0.003)	Loss 0.2395 (0.2794)	Prec@1 92.578 (90.795)
+Epoch: [21][150/196]	Time 0.080 (0.110)	Data 0.000 (0.002)	Loss 0.2385 (0.2802)	Prec@1 92.188 (90.809)
+Test: [0/79]	Time 0.188 (0.188)	Loss 0.4524 (0.4524)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.6935 (0.5788)	Prec@1 78.125 (81.327)
+ * Prec@1 80.900
+current lr 9.71440e-03
+Epoch: [22][0/196]	Time 0.340 (0.340)	Data 0.228 (0.228)	Loss 0.3259 (0.3259)	Prec@1 87.500 (87.500)
+Epoch: [22][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.3163 (0.2632)	Prec@1 89.844 (91.376)
+Epoch: [22][100/196]	Time 0.116 (0.114)	Data 0.000 (0.003)	Loss 0.3467 (0.2713)	Prec@1 87.891 (91.058)
+Epoch: [22][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2443 (0.2781)	Prec@1 91.797 (90.775)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.7326 (0.7326)	Prec@1 76.562 (76.562)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.8536 (0.7449)	Prec@1 76.562 (76.547)
+ * Prec@1 76.380
+current lr 9.68722e-03
+Epoch: [23][0/196]	Time 0.349 (0.349)	Data 0.236 (0.236)	Loss 0.2192 (0.2192)	Prec@1 93.750 (93.750)
+Epoch: [23][50/196]	Time 0.111 (0.117)	Data 0.000 (0.005)	Loss 0.2894 (0.2849)	Prec@1 91.406 (90.725)
+Epoch: [23][100/196]	Time 0.116 (0.114)	Data 0.000 (0.003)	Loss 0.3217 (0.2881)	Prec@1 86.719 (90.582)
+Epoch: [23][150/196]	Time 0.109 (0.114)	Data 0.000 (0.002)	Loss 0.3095 (0.2891)	Prec@1 89.062 (90.493)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.5332 (0.5332)	Prec@1 82.812 (82.812)
+Test: [50/79]	Time 0.014 (0.023)	Loss 0.6126 (0.6072)	Prec@1 81.250 (80.775)
+ * Prec@1 80.650
+current lr 9.65888e-03
+Epoch: [24][0/196]	Time 0.331 (0.331)	Data 0.224 (0.224)	Loss 0.2870 (0.2870)	Prec@1 91.016 (91.016)
+Epoch: [24][50/196]	Time 0.114 (0.117)	Data 0.000 (0.005)	Loss 0.2859 (0.2858)	Prec@1 89.844 (90.771)
+Epoch: [24][100/196]	Time 0.111 (0.115)	Data 0.000 (0.003)	Loss 0.2686 (0.2851)	Prec@1 91.797 (90.749)
+Epoch: [24][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2307 (0.2848)	Prec@1 92.969 (90.713)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.3657 (0.3657)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.4657 (0.4835)	Prec@1 82.031 (84.191)
+ * Prec@1 84.400
+current lr 9.62940e-03
+Epoch: [25][0/196]	Time 0.324 (0.324)	Data 0.243 (0.243)	Loss 0.3515 (0.3515)	Prec@1 87.500 (87.500)
+Epoch: [25][50/196]	Time 0.110 (0.109)	Data 0.000 (0.005)	Loss 0.2553 (0.2715)	Prec@1 91.797 (91.108)
+Epoch: [25][100/196]	Time 0.116 (0.110)	Data 0.000 (0.003)	Loss 0.2959 (0.2790)	Prec@1 89.844 (90.714)
+Epoch: [25][150/196]	Time 0.110 (0.111)	Data 0.000 (0.002)	Loss 0.3035 (0.2890)	Prec@1 89.453 (90.397)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.4723 (0.4723)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.5125 (0.5440)	Prec@1 85.156 (82.552)
+ * Prec@1 82.620
+current lr 9.59877e-03
+Epoch: [26][0/196]	Time 0.351 (0.351)	Data 0.242 (0.242)	Loss 0.2836 (0.2836)	Prec@1 90.625 (90.625)
+Epoch: [26][50/196]	Time 0.078 (0.110)	Data 0.000 (0.005)	Loss 0.3521 (0.2870)	Prec@1 86.719 (90.625)
+Epoch: [26][100/196]	Time 0.110 (0.110)	Data 0.000 (0.003)	Loss 0.3383 (0.2922)	Prec@1 89.844 (90.397)
+Epoch: [26][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.3080 (0.2909)	Prec@1 90.625 (90.459)
+Test: [0/79]	Time 0.242 (0.242)	Loss 0.4828 (0.4828)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.021 (0.027)	Loss 0.5238 (0.4785)	Prec@1 84.375 (84.314)
+ * Prec@1 84.390
+current lr 9.56702e-03
+Epoch: [27][0/196]	Time 0.353 (0.353)	Data 0.235 (0.235)	Loss 0.2811 (0.2811)	Prec@1 92.188 (92.188)
+Epoch: [27][50/196]	Time 0.118 (0.116)	Data 0.000 (0.005)	Loss 0.2206 (0.2793)	Prec@1 92.188 (91.092)
+Epoch: [27][100/196]	Time 0.114 (0.109)	Data 0.000 (0.003)	Loss 0.3177 (0.2793)	Prec@1 89.062 (90.938)
+Epoch: [27][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2854 (0.2863)	Prec@1 91.797 (90.708)
+Test: [0/79]	Time 0.199 (0.199)	Loss 0.5659 (0.5659)	Prec@1 82.031 (82.031)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6637 (0.6207)	Prec@1 78.125 (80.392)
+ * Prec@1 80.840
+current lr 9.53414e-03
+Epoch: [28][0/196]	Time 0.367 (0.367)	Data 0.251 (0.251)	Loss 0.3501 (0.3501)	Prec@1 89.453 (89.453)
+Epoch: [28][50/196]	Time 0.112 (0.117)	Data 0.000 (0.005)	Loss 0.3731 (0.2985)	Prec@1 86.328 (90.464)
+Epoch: [28][100/196]	Time 0.099 (0.112)	Data 0.000 (0.003)	Loss 0.2851 (0.2901)	Prec@1 90.234 (90.664)
+Epoch: [28][150/196]	Time 0.117 (0.111)	Data 0.000 (0.002)	Loss 0.3044 (0.2954)	Prec@1 89.062 (90.501)
+Test: [0/79]	Time 0.200 (0.200)	Loss 0.7846 (0.7846)	Prec@1 75.781 (75.781)
+Test: [50/79]	Time 0.021 (0.026)	Loss 1.0643 (0.9005)	Prec@1 70.312 (74.173)
+ * Prec@1 73.970
+current lr 9.50014e-03
+Epoch: [29][0/196]	Time 0.363 (0.363)	Data 0.245 (0.245)	Loss 0.3281 (0.3281)	Prec@1 89.453 (89.453)
+Epoch: [29][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.3547 (0.2877)	Prec@1 87.500 (90.495)
+Epoch: [29][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2085 (0.2842)	Prec@1 94.141 (90.753)
+Epoch: [29][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.2408 (0.2884)	Prec@1 94.922 (90.529)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.5720 (0.5720)	Prec@1 82.031 (82.031)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5429 (0.5690)	Prec@1 80.469 (82.353)
+ * Prec@1 82.200
+current lr 9.46503e-03
+Epoch: [30][0/196]	Time 0.384 (0.384)	Data 0.274 (0.274)	Loss 0.2382 (0.2382)	Prec@1 92.969 (92.969)
+Epoch: [30][50/196]	Time 0.112 (0.118)	Data 0.000 (0.006)	Loss 0.3855 (0.2928)	Prec@1 85.938 (90.234)
+Epoch: [30][100/196]	Time 0.110 (0.115)	Data 0.000 (0.003)	Loss 0.2610 (0.2922)	Prec@1 92.578 (90.339)
+Epoch: [30][150/196]	Time 0.093 (0.113)	Data 0.000 (0.002)	Loss 0.2483 (0.2962)	Prec@1 92.969 (90.175)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.6260 (0.6260)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5567 (0.5275)	Prec@1 79.688 (82.828)
+ * Prec@1 82.720
+current lr 9.42883e-03
+Epoch: [31][0/196]	Time 0.355 (0.355)	Data 0.240 (0.240)	Loss 0.2413 (0.2413)	Prec@1 94.141 (94.141)
+Epoch: [31][50/196]	Time 0.117 (0.117)	Data 0.000 (0.005)	Loss 0.2903 (0.2794)	Prec@1 90.625 (91.016)
+Epoch: [31][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.3053 (0.2892)	Prec@1 89.062 (90.695)
+Epoch: [31][150/196]	Time 0.111 (0.113)	Data 0.000 (0.002)	Loss 0.3154 (0.2893)	Prec@1 87.891 (90.609)
+Test: [0/79]	Time 0.212 (0.212)	Loss 0.3942 (0.3942)	Prec@1 84.375 (84.375)
+Test: [50/79]	Time 0.023 (0.024)	Loss 0.5001 (0.4363)	Prec@1 84.375 (85.830)
+ * Prec@1 85.530
+current lr 9.39153e-03
+Epoch: [32][0/196]	Time 0.352 (0.352)	Data 0.239 (0.239)	Loss 0.2516 (0.2516)	Prec@1 91.016 (91.016)
+Epoch: [32][50/196]	Time 0.107 (0.117)	Data 0.000 (0.005)	Loss 0.2686 (0.3143)	Prec@1 91.797 (89.514)
+Epoch: [32][100/196]	Time 0.109 (0.115)	Data 0.000 (0.003)	Loss 0.2376 (0.3064)	Prec@1 92.578 (89.879)
+Epoch: [32][150/196]	Time 0.116 (0.113)	Data 0.000 (0.002)	Loss 0.4043 (0.3041)	Prec@1 85.156 (90.009)
+Test: [0/79]	Time 0.199 (0.199)	Loss 0.4790 (0.4790)	Prec@1 84.375 (84.375)
+Test: [50/79]	Time 0.012 (0.023)	Loss 0.5195 (0.4978)	Prec@1 85.938 (83.410)
+ * Prec@1 83.260
+current lr 9.35316e-03
+Epoch: [33][0/196]	Time 0.341 (0.341)	Data 0.238 (0.238)	Loss 0.2914 (0.2914)	Prec@1 91.406 (91.406)
+Epoch: [33][50/196]	Time 0.111 (0.111)	Data 0.000 (0.005)	Loss 0.3399 (0.2822)	Prec@1 88.672 (91.039)
+Epoch: [33][100/196]	Time 0.107 (0.112)	Data 0.000 (0.003)	Loss 0.2815 (0.2912)	Prec@1 90.234 (90.602)
+Epoch: [33][150/196]	Time 0.115 (0.112)	Data 0.000 (0.002)	Loss 0.3298 (0.2940)	Prec@1 89.453 (90.444)
+Test: [0/79]	Time 0.226 (0.226)	Loss 0.5284 (0.5284)	Prec@1 82.031 (82.031)
+Test: [50/79]	Time 0.024 (0.027)	Loss 0.6960 (0.5411)	Prec@1 79.688 (82.567)
+ * Prec@1 82.860
+current lr 9.31371e-03
+Epoch: [34][0/196]	Time 0.380 (0.380)	Data 0.264 (0.264)	Loss 0.2613 (0.2613)	Prec@1 91.797 (91.797)
+Epoch: [34][50/196]	Time 0.110 (0.107)	Data 0.000 (0.006)	Loss 0.3002 (0.2942)	Prec@1 89.844 (90.234)
+Epoch: [34][100/196]	Time 0.109 (0.109)	Data 0.000 (0.003)	Loss 0.2640 (0.2929)	Prec@1 91.016 (90.323)
+Epoch: [34][150/196]	Time 0.106 (0.110)	Data 0.000 (0.002)	Loss 0.2569 (0.2930)	Prec@1 91.016 (90.258)
+Test: [0/79]	Time 0.210 (0.210)	Loss 0.5431 (0.5431)	Prec@1 82.031 (82.031)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.7585 (0.6223)	Prec@1 72.656 (79.596)
+ * Prec@1 79.520
+current lr 9.27320e-03
+Epoch: [35][0/196]	Time 0.339 (0.339)	Data 0.224 (0.224)	Loss 0.2765 (0.2765)	Prec@1 89.453 (89.453)
+Epoch: [35][50/196]	Time 0.097 (0.113)	Data 0.000 (0.005)	Loss 0.2761 (0.2836)	Prec@1 90.234 (90.809)
+Epoch: [35][100/196]	Time 0.110 (0.109)	Data 0.000 (0.003)	Loss 0.2661 (0.2858)	Prec@1 92.188 (90.660)
+Epoch: [35][150/196]	Time 0.115 (0.110)	Data 0.000 (0.002)	Loss 0.2518 (0.2843)	Prec@1 91.797 (90.700)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.3606 (0.3606)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3628 (0.4036)	Prec@1 87.500 (86.857)
+ * Prec@1 86.600
+current lr 9.23164e-03
+Epoch: [36][0/196]	Time 0.342 (0.342)	Data 0.231 (0.231)	Loss 0.2926 (0.2926)	Prec@1 89.453 (89.453)
+Epoch: [36][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.2463 (0.2894)	Prec@1 92.188 (90.403)
+Epoch: [36][100/196]	Time 0.077 (0.110)	Data 0.000 (0.003)	Loss 0.2586 (0.2878)	Prec@1 92.188 (90.544)
+Epoch: [36][150/196]	Time 0.114 (0.110)	Data 0.000 (0.002)	Loss 0.3075 (0.2885)	Prec@1 89.062 (90.522)
+Test: [0/79]	Time 0.209 (0.209)	Loss 0.5041 (0.5041)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4884 (0.5233)	Prec@1 85.938 (82.858)
+ * Prec@1 83.240
+current lr 9.18904e-03
+Epoch: [37][0/196]	Time 0.342 (0.342)	Data 0.228 (0.228)	Loss 0.2187 (0.2187)	Prec@1 94.141 (94.141)
+Epoch: [37][50/196]	Time 0.110 (0.115)	Data 0.000 (0.005)	Loss 0.2085 (0.2895)	Prec@1 94.141 (90.587)
+Epoch: [37][100/196]	Time 0.109 (0.113)	Data 0.000 (0.003)	Loss 0.2652 (0.2863)	Prec@1 90.234 (90.598)
+Epoch: [37][150/196]	Time 0.110 (0.109)	Data 0.000 (0.002)	Loss 0.2463 (0.2884)	Prec@1 92.188 (90.571)
+Test: [0/79]	Time 0.197 (0.197)	Loss 0.6351 (0.6351)	Prec@1 77.344 (77.344)
+Test: [50/79]	Time 0.025 (0.026)	Loss 0.7467 (0.7079)	Prec@1 74.219 (77.589)
+ * Prec@1 77.520
+current lr 9.14540e-03
+Epoch: [38][0/196]	Time 0.403 (0.403)	Data 0.293 (0.293)	Loss 0.2789 (0.2789)	Prec@1 90.234 (90.234)
+Epoch: [38][50/196]	Time 0.107 (0.117)	Data 0.000 (0.006)	Loss 0.2783 (0.2774)	Prec@1 91.016 (90.709)
+Epoch: [38][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.2633 (0.2839)	Prec@1 91.797 (90.610)
+Epoch: [38][150/196]	Time 0.100 (0.112)	Data 0.000 (0.002)	Loss 0.2473 (0.2868)	Prec@1 92.969 (90.547)
+Test: [0/79]	Time 0.221 (0.221)	Loss 0.5447 (0.5447)	Prec@1 79.688 (79.688)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5834 (0.6441)	Prec@1 79.688 (79.013)
+ * Prec@1 79.530
+current lr 9.10075e-03
+Epoch: [39][0/196]	Time 0.353 (0.353)	Data 0.239 (0.239)	Loss 0.2218 (0.2218)	Prec@1 94.141 (94.141)
+Epoch: [39][50/196]	Time 0.115 (0.116)	Data 0.000 (0.005)	Loss 0.2450 (0.2803)	Prec@1 91.406 (90.870)
+Epoch: [39][100/196]	Time 0.109 (0.113)	Data 0.000 (0.003)	Loss 0.3006 (0.2833)	Prec@1 89.062 (90.695)
+Epoch: [39][150/196]	Time 0.114 (0.113)	Data 0.000 (0.002)	Loss 0.2552 (0.2838)	Prec@1 91.406 (90.700)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.4852 (0.4852)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.019 (0.026)	Loss 0.4726 (0.4942)	Prec@1 81.250 (83.624)
+ * Prec@1 83.880
+current lr 9.05508e-03
+Epoch: [40][0/196]	Time 0.335 (0.335)	Data 0.228 (0.228)	Loss 0.2739 (0.2739)	Prec@1 91.016 (91.016)
+Epoch: [40][50/196]	Time 0.113 (0.116)	Data 0.000 (0.005)	Loss 0.3159 (0.2831)	Prec@1 89.453 (90.479)
+Epoch: [40][100/196]	Time 0.109 (0.113)	Data 0.000 (0.003)	Loss 0.2803 (0.2867)	Prec@1 88.672 (90.509)
+Epoch: [40][150/196]	Time 0.116 (0.113)	Data 0.000 (0.002)	Loss 0.2556 (0.2857)	Prec@1 92.578 (90.581)
+Test: [0/79]	Time 0.252 (0.252)	Loss 0.6132 (0.6132)	Prec@1 81.250 (81.250)
+Test: [50/79]	Time 0.020 (0.024)	Loss 0.5095 (0.5237)	Prec@1 83.594 (83.287)
+ * Prec@1 83.330
+current lr 9.00842e-03
+Epoch: [41][0/196]	Time 0.337 (0.337)	Data 0.236 (0.236)	Loss 0.2608 (0.2608)	Prec@1 91.797 (91.797)
+Epoch: [41][50/196]	Time 0.109 (0.112)	Data 0.000 (0.005)	Loss 0.2477 (0.2630)	Prec@1 93.750 (91.483)
+Epoch: [41][100/196]	Time 0.111 (0.111)	Data 0.000 (0.003)	Loss 0.2962 (0.2777)	Prec@1 89.844 (91.016)
+Epoch: [41][150/196]	Time 0.111 (0.111)	Data 0.000 (0.002)	Loss 0.3461 (0.2817)	Prec@1 87.891 (90.793)
+Test: [0/79]	Time 0.202 (0.202)	Loss 0.3611 (0.3611)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4285 (0.3736)	Prec@1 86.719 (87.653)
+ * Prec@1 88.000
+current lr 8.96078e-03
+Epoch: [42][0/196]	Time 0.347 (0.347)	Data 0.234 (0.234)	Loss 0.2965 (0.2965)	Prec@1 90.625 (90.625)
+Epoch: [42][50/196]	Time 0.111 (0.107)	Data 0.000 (0.005)	Loss 0.2982 (0.2836)	Prec@1 91.016 (90.725)
+Epoch: [42][100/196]	Time 0.104 (0.108)	Data 0.000 (0.003)	Loss 0.3284 (0.2819)	Prec@1 90.625 (90.822)
+Epoch: [42][150/196]	Time 0.108 (0.109)	Data 0.000 (0.002)	Loss 0.3283 (0.2841)	Prec@1 89.453 (90.770)
+Test: [0/79]	Time 0.215 (0.215)	Loss 0.5601 (0.5601)	Prec@1 78.906 (78.906)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5915 (0.6101)	Prec@1 80.469 (80.683)
+ * Prec@1 80.470
+current lr 8.91215e-03
+Epoch: [43][0/196]	Time 0.352 (0.352)	Data 0.241 (0.241)	Loss 0.2597 (0.2597)	Prec@1 91.406 (91.406)
+Epoch: [43][50/196]	Time 0.099 (0.113)	Data 0.000 (0.005)	Loss 0.2429 (0.2845)	Prec@1 92.969 (90.633)
+Epoch: [43][100/196]	Time 0.106 (0.108)	Data 0.000 (0.003)	Loss 0.3028 (0.2826)	Prec@1 88.672 (90.718)
+Epoch: [43][150/196]	Time 0.110 (0.109)	Data 0.000 (0.002)	Loss 0.3136 (0.2848)	Prec@1 89.844 (90.716)
+Test: [0/79]	Time 0.188 (0.188)	Loss 0.6623 (0.6623)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5805 (0.5594)	Prec@1 84.375 (82.598)
+ * Prec@1 82.620
+current lr 8.86257e-03
+Epoch: [44][0/196]	Time 0.352 (0.352)	Data 0.240 (0.240)	Loss 0.2097 (0.2097)	Prec@1 92.969 (92.969)
+Epoch: [44][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.3529 (0.2860)	Prec@1 87.109 (90.541)
+Epoch: [44][100/196]	Time 0.090 (0.110)	Data 0.000 (0.003)	Loss 0.2510 (0.2729)	Prec@1 91.797 (91.120)
+Epoch: [44][150/196]	Time 0.110 (0.109)	Data 0.000 (0.002)	Loss 0.3297 (0.2771)	Prec@1 89.453 (90.951)
+Test: [0/79]	Time 0.212 (0.212)	Loss 0.5140 (0.5140)	Prec@1 82.812 (82.812)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6482 (0.6449)	Prec@1 78.906 (79.963)
+ * Prec@1 79.740
+current lr 8.81203e-03
+Epoch: [45][0/196]	Time 0.347 (0.347)	Data 0.234 (0.234)	Loss 0.2502 (0.2502)	Prec@1 92.969 (92.969)
+Epoch: [45][50/196]	Time 0.111 (0.115)	Data 0.000 (0.005)	Loss 0.3039 (0.2667)	Prec@1 89.844 (91.284)
+Epoch: [45][100/196]	Time 0.110 (0.113)	Data 0.000 (0.003)	Loss 0.2846 (0.2842)	Prec@1 90.234 (90.749)
+Epoch: [45][150/196]	Time 0.109 (0.109)	Data 0.000 (0.002)	Loss 0.3019 (0.2871)	Prec@1 89.844 (90.716)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.4886 (0.4886)	Prec@1 81.250 (81.250)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6839 (0.5552)	Prec@1 78.125 (82.491)
+ * Prec@1 82.570
+current lr 8.76056e-03
+Epoch: [46][0/196]	Time 0.353 (0.353)	Data 0.234 (0.234)	Loss 0.2109 (0.2109)	Prec@1 94.531 (94.531)
+Epoch: [46][50/196]	Time 0.111 (0.115)	Data 0.000 (0.005)	Loss 0.2781 (0.2738)	Prec@1 91.016 (91.138)
+Epoch: [46][100/196]	Time 0.109 (0.113)	Data 0.000 (0.003)	Loss 0.2536 (0.2653)	Prec@1 92.578 (91.391)
+Epoch: [46][150/196]	Time 0.099 (0.111)	Data 0.000 (0.002)	Loss 0.2610 (0.2725)	Prec@1 91.016 (91.163)
+Test: [0/79]	Time 0.209 (0.209)	Loss 0.5093 (0.5093)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4506 (0.4364)	Prec@1 85.156 (85.509)
+ * Prec@1 85.570
+current lr 8.70816e-03
+Epoch: [47][0/196]	Time 0.360 (0.360)	Data 0.239 (0.239)	Loss 0.3507 (0.3507)	Prec@1 86.328 (86.328)
+Epoch: [47][50/196]	Time 0.109 (0.115)	Data 0.000 (0.005)	Loss 0.2309 (0.2798)	Prec@1 93.750 (90.801)
+Epoch: [47][100/196]	Time 0.107 (0.113)	Data 0.000 (0.003)	Loss 0.3129 (0.2829)	Prec@1 91.016 (90.733)
+Epoch: [47][150/196]	Time 0.112 (0.112)	Data 0.000 (0.002)	Loss 0.3376 (0.2831)	Prec@1 89.062 (90.661)
+Test: [0/79]	Time 0.216 (0.216)	Loss 0.5214 (0.5214)	Prec@1 82.812 (82.812)
+Test: [50/79]	Time 0.023 (0.024)	Loss 0.6297 (0.5459)	Prec@1 79.688 (81.909)
+ * Prec@1 81.990
+current lr 8.65484e-03
+Epoch: [48][0/196]	Time 0.356 (0.356)	Data 0.241 (0.241)	Loss 0.2643 (0.2643)	Prec@1 92.188 (92.188)
+Epoch: [48][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.3159 (0.2793)	Prec@1 88.672 (90.847)
+Epoch: [48][100/196]	Time 0.113 (0.113)	Data 0.000 (0.003)	Loss 0.3245 (0.2781)	Prec@1 88.281 (90.896)
+Epoch: [48][150/196]	Time 0.113 (0.112)	Data 0.000 (0.002)	Loss 0.2796 (0.2759)	Prec@1 91.797 (90.998)
+Test: [0/79]	Time 0.196 (0.196)	Loss 0.6406 (0.6406)	Prec@1 79.688 (79.688)
+Test: [50/79]	Time 0.014 (0.025)	Loss 0.8193 (0.6135)	Prec@1 72.656 (80.025)
+ * Prec@1 79.750
+current lr 8.60063e-03
+Epoch: [49][0/196]	Time 0.334 (0.334)	Data 0.232 (0.232)	Loss 0.2550 (0.2550)	Prec@1 93.750 (93.750)
+Epoch: [49][50/196]	Time 0.107 (0.110)	Data 0.000 (0.005)	Loss 0.2242 (0.2542)	Prec@1 93.750 (91.789)
+Epoch: [49][100/196]	Time 0.108 (0.110)	Data 0.000 (0.003)	Loss 0.2035 (0.2633)	Prec@1 93.359 (91.503)
+Epoch: [49][150/196]	Time 0.111 (0.111)	Data 0.000 (0.002)	Loss 0.3168 (0.2722)	Prec@1 88.281 (91.135)
+Test: [0/79]	Time 0.188 (0.188)	Loss 0.3356 (0.3356)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4120 (0.4706)	Prec@1 85.938 (84.865)
+ * Prec@1 84.810
+current lr 8.54553e-03
+Epoch: [50][0/196]	Time 0.352 (0.352)	Data 0.239 (0.239)	Loss 0.2364 (0.2364)	Prec@1 92.969 (92.969)
+Epoch: [50][50/196]	Time 0.106 (0.106)	Data 0.000 (0.005)	Loss 0.2660 (0.2716)	Prec@1 91.406 (90.947)
+Epoch: [50][100/196]	Time 0.109 (0.108)	Data 0.001 (0.003)	Loss 0.2191 (0.2724)	Prec@1 93.359 (90.961)
+Epoch: [50][150/196]	Time 0.107 (0.109)	Data 0.000 (0.002)	Loss 0.3209 (0.2759)	Prec@1 90.234 (90.912)
+Test: [0/79]	Time 0.212 (0.212)	Loss 0.3280 (0.3280)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4553 (0.4301)	Prec@1 84.375 (85.861)
+ * Prec@1 85.780
+current lr 8.48956e-03
+Epoch: [51][0/196]	Time 0.344 (0.344)	Data 0.234 (0.234)	Loss 0.2667 (0.2667)	Prec@1 91.016 (91.016)
+Epoch: [51][50/196]	Time 0.107 (0.116)	Data 0.000 (0.005)	Loss 0.3221 (0.2572)	Prec@1 87.891 (91.728)
+Epoch: [51][100/196]	Time 0.109 (0.109)	Data 0.000 (0.003)	Loss 0.2648 (0.2666)	Prec@1 91.016 (91.290)
+Epoch: [51][150/196]	Time 0.106 (0.109)	Data 0.000 (0.002)	Loss 0.2625 (0.2685)	Prec@1 92.188 (91.194)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.4583 (0.4583)	Prec@1 85.938 (85.938)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5695 (0.4665)	Prec@1 83.594 (84.620)
+ * Prec@1 84.740
+current lr 8.43274e-03
+Epoch: [52][0/196]	Time 0.354 (0.354)	Data 0.241 (0.241)	Loss 0.2330 (0.2330)	Prec@1 93.750 (93.750)
+Epoch: [52][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.2302 (0.2695)	Prec@1 92.188 (91.153)
+Epoch: [52][100/196]	Time 0.099 (0.111)	Data 0.000 (0.003)	Loss 0.2854 (0.2706)	Prec@1 91.406 (91.031)
+Epoch: [52][150/196]	Time 0.120 (0.109)	Data 0.000 (0.002)	Loss 0.2745 (0.2717)	Prec@1 91.406 (91.101)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.4698 (0.4698)	Prec@1 84.375 (84.375)
+Test: [50/79]	Time 0.022 (0.026)	Loss 0.5287 (0.4508)	Prec@1 83.594 (85.172)
+ * Prec@1 85.120
+current lr 8.37506e-03
+Epoch: [53][0/196]	Time 0.359 (0.359)	Data 0.244 (0.244)	Loss 0.2258 (0.2258)	Prec@1 92.969 (92.969)
+Epoch: [53][50/196]	Time 0.111 (0.116)	Data 0.000 (0.005)	Loss 0.2392 (0.2728)	Prec@1 92.969 (90.954)
+Epoch: [53][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2606 (0.2701)	Prec@1 92.188 (91.190)
+Epoch: [53][150/196]	Time 0.118 (0.109)	Data 0.000 (0.002)	Loss 0.3222 (0.2688)	Prec@1 90.234 (91.168)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.4290 (0.4290)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.4629 (0.4628)	Prec@1 82.031 (84.926)
+ * Prec@1 84.520
+current lr 8.31656e-03
+Epoch: [54][0/196]	Time 0.354 (0.354)	Data 0.241 (0.241)	Loss 0.2771 (0.2771)	Prec@1 91.797 (91.797)
+Epoch: [54][50/196]	Time 0.107 (0.116)	Data 0.000 (0.005)	Loss 0.2324 (0.2662)	Prec@1 94.141 (91.353)
+Epoch: [54][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.1972 (0.2605)	Prec@1 94.531 (91.515)
+Epoch: [54][150/196]	Time 0.104 (0.112)	Data 0.000 (0.002)	Loss 0.3457 (0.2673)	Prec@1 88.672 (91.210)
+Test: [0/79]	Time 0.196 (0.196)	Loss 0.4942 (0.4942)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5550 (0.5665)	Prec@1 81.250 (82.016)
+ * Prec@1 81.720
+current lr 8.25724e-03
+Epoch: [55][0/196]	Time 0.345 (0.345)	Data 0.230 (0.230)	Loss 0.2714 (0.2714)	Prec@1 90.625 (90.625)
+Epoch: [55][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.2744 (0.2606)	Prec@1 90.625 (91.360)
+Epoch: [55][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.2725 (0.2624)	Prec@1 91.797 (91.445)
+Epoch: [55][150/196]	Time 0.112 (0.113)	Data 0.000 (0.002)	Loss 0.2021 (0.2661)	Prec@1 94.141 (91.362)
+Test: [0/79]	Time 0.218 (0.218)	Loss 0.4532 (0.4532)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.023 (0.024)	Loss 0.6215 (0.5186)	Prec@1 78.125 (82.874)
+ * Prec@1 83.320
+current lr 8.19712e-03
+Epoch: [56][0/196]	Time 0.360 (0.360)	Data 0.244 (0.244)	Loss 0.2454 (0.2454)	Prec@1 92.188 (92.188)
+Epoch: [56][50/196]	Time 0.111 (0.117)	Data 0.000 (0.005)	Loss 0.2503 (0.2534)	Prec@1 92.969 (91.667)
+Epoch: [56][100/196]	Time 0.114 (0.114)	Data 0.000 (0.003)	Loss 0.2604 (0.2564)	Prec@1 91.016 (91.534)
+Epoch: [56][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2213 (0.2602)	Prec@1 93.750 (91.448)
+Test: [0/79]	Time 0.198 (0.198)	Loss 0.4596 (0.4596)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.014 (0.024)	Loss 0.5899 (0.4458)	Prec@1 80.469 (84.804)
+ * Prec@1 85.140
+current lr 8.13621e-03
+Epoch: [57][0/196]	Time 0.335 (0.335)	Data 0.237 (0.237)	Loss 0.2644 (0.2644)	Prec@1 92.188 (92.188)
+Epoch: [57][50/196]	Time 0.107 (0.112)	Data 0.000 (0.005)	Loss 0.2426 (0.2585)	Prec@1 92.969 (91.713)
+Epoch: [57][100/196]	Time 0.116 (0.112)	Data 0.001 (0.003)	Loss 0.2687 (0.2646)	Prec@1 91.797 (91.487)
+Epoch: [57][150/196]	Time 0.114 (0.111)	Data 0.000 (0.002)	Loss 0.2418 (0.2650)	Prec@1 92.969 (91.396)
+Test: [0/79]	Time 0.190 (0.190)	Loss 0.4862 (0.4862)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5403 (0.5162)	Prec@1 82.031 (82.858)
+ * Prec@1 82.610
+current lr 8.07454e-03
+Epoch: [58][0/196]	Time 0.348 (0.348)	Data 0.234 (0.234)	Loss 0.2090 (0.2090)	Prec@1 94.531 (94.531)
+Epoch: [58][50/196]	Time 0.110 (0.107)	Data 0.000 (0.005)	Loss 0.2541 (0.2748)	Prec@1 92.578 (91.092)
+Epoch: [58][100/196]	Time 0.115 (0.110)	Data 0.000 (0.003)	Loss 0.2313 (0.2697)	Prec@1 92.578 (91.197)
+Epoch: [58][150/196]	Time 0.116 (0.111)	Data 0.000 (0.002)	Loss 0.2619 (0.2641)	Prec@1 91.016 (91.437)
+Test: [0/79]	Time 0.209 (0.209)	Loss 0.5607 (0.5607)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6304 (0.4989)	Prec@1 81.250 (84.161)
+ * Prec@1 84.180
+current lr 8.01210e-03
+Epoch: [59][0/196]	Time 0.422 (0.422)	Data 0.313 (0.313)	Loss 0.3222 (0.3222)	Prec@1 91.016 (91.016)
+Epoch: [59][50/196]	Time 0.105 (0.117)	Data 0.000 (0.006)	Loss 0.2230 (0.2691)	Prec@1 92.969 (91.307)
+Epoch: [59][100/196]	Time 0.111 (0.111)	Data 0.000 (0.003)	Loss 0.2390 (0.2689)	Prec@1 93.359 (91.302)
+Epoch: [59][150/196]	Time 0.106 (0.111)	Data 0.000 (0.002)	Loss 0.3017 (0.2685)	Prec@1 89.453 (91.282)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.3883 (0.3883)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4094 (0.4559)	Prec@1 85.938 (85.447)
+ * Prec@1 84.920
+current lr 7.94893e-03
+Epoch: [60][0/196]	Time 0.359 (0.359)	Data 0.244 (0.244)	Loss 0.2518 (0.2518)	Prec@1 91.016 (91.016)
+Epoch: [60][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.2816 (0.2651)	Prec@1 91.016 (91.207)
+Epoch: [60][100/196]	Time 0.076 (0.110)	Data 0.000 (0.003)	Loss 0.2180 (0.2678)	Prec@1 92.188 (91.186)
+Epoch: [60][150/196]	Time 0.108 (0.110)	Data 0.000 (0.002)	Loss 0.2552 (0.2694)	Prec@1 91.797 (91.155)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.6289 (0.6289)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6785 (0.5491)	Prec@1 79.688 (82.721)
+ * Prec@1 82.480
+current lr 7.88503e-03
+Epoch: [61][0/196]	Time 0.348 (0.348)	Data 0.231 (0.231)	Loss 0.2854 (0.2854)	Prec@1 90.234 (90.234)
+Epoch: [61][50/196]	Time 0.111 (0.117)	Data 0.000 (0.005)	Loss 0.2444 (0.2527)	Prec@1 91.797 (91.942)
+Epoch: [61][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2157 (0.2530)	Prec@1 92.578 (91.979)
+Epoch: [61][150/196]	Time 0.118 (0.110)	Data 0.000 (0.002)	Loss 0.2914 (0.2583)	Prec@1 87.891 (91.717)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.8393 (0.8393)	Prec@1 73.438 (73.438)
+Test: [50/79]	Time 0.023 (0.026)	Loss 1.0117 (0.9174)	Prec@1 69.531 (73.085)
+ * Prec@1 73.320
+current lr 7.82042e-03
+Epoch: [62][0/196]	Time 0.352 (0.352)	Data 0.236 (0.236)	Loss 0.2730 (0.2730)	Prec@1 91.797 (91.797)
+Epoch: [62][50/196]	Time 0.108 (0.116)	Data 0.000 (0.005)	Loss 0.2814 (0.2615)	Prec@1 91.797 (91.513)
+Epoch: [62][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.2170 (0.2577)	Prec@1 92.578 (91.685)
+Epoch: [62][150/196]	Time 0.099 (0.111)	Data 0.000 (0.002)	Loss 0.3158 (0.2647)	Prec@1 87.891 (91.393)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.3579 (0.3579)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5393 (0.4344)	Prec@1 82.031 (85.968)
+ * Prec@1 86.030
+current lr 7.75511e-03
+Epoch: [63][0/196]	Time 0.366 (0.366)	Data 0.248 (0.248)	Loss 0.2074 (0.2074)	Prec@1 94.141 (94.141)
+Epoch: [63][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.1926 (0.2543)	Prec@1 94.922 (91.820)
+Epoch: [63][100/196]	Time 0.115 (0.114)	Data 0.000 (0.003)	Loss 0.2876 (0.2569)	Prec@1 88.672 (91.588)
+Epoch: [63][150/196]	Time 0.114 (0.113)	Data 0.000 (0.002)	Loss 0.2854 (0.2579)	Prec@1 89.453 (91.551)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.3661 (0.3661)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4580 (0.4193)	Prec@1 86.719 (86.382)
+ * Prec@1 86.780
+current lr 7.68913e-03
+Epoch: [64][0/196]	Time 0.351 (0.351)	Data 0.240 (0.240)	Loss 0.2434 (0.2434)	Prec@1 91.406 (91.406)
+Epoch: [64][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.2908 (0.2564)	Prec@1 89.844 (91.491)
+Epoch: [64][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2364 (0.2537)	Prec@1 91.016 (91.662)
+Epoch: [64][150/196]	Time 0.111 (0.113)	Data 0.000 (0.002)	Loss 0.3328 (0.2537)	Prec@1 91.016 (91.688)
+Test: [0/79]	Time 0.202 (0.202)	Loss 0.3919 (0.3919)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.020 (0.022)	Loss 0.4669 (0.4151)	Prec@1 85.156 (86.014)
+ * Prec@1 86.320
+current lr 7.62249e-03
+Epoch: [65][0/196]	Time 0.323 (0.323)	Data 0.241 (0.241)	Loss 0.2610 (0.2610)	Prec@1 91.797 (91.797)
+Epoch: [65][50/196]	Time 0.114 (0.114)	Data 0.000 (0.005)	Loss 0.3336 (0.2565)	Prec@1 85.156 (91.406)
+Epoch: [65][100/196]	Time 0.108 (0.113)	Data 0.000 (0.003)	Loss 0.3292 (0.2549)	Prec@1 89.453 (91.619)
+Epoch: [65][150/196]	Time 0.110 (0.112)	Data 0.000 (0.002)	Loss 0.3824 (0.2588)	Prec@1 87.891 (91.486)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.2799 (0.2799)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.4244 (0.4442)	Prec@1 85.938 (85.830)
+ * Prec@1 85.660
+current lr 7.55521e-03
+Epoch: [66][0/196]	Time 0.358 (0.358)	Data 0.245 (0.245)	Loss 0.2067 (0.2067)	Prec@1 93.359 (93.359)
+Epoch: [66][50/196]	Time 0.109 (0.107)	Data 0.000 (0.005)	Loss 0.2116 (0.2469)	Prec@1 93.750 (92.149)
+Epoch: [66][100/196]	Time 0.116 (0.109)	Data 0.000 (0.003)	Loss 0.2607 (0.2561)	Prec@1 89.844 (91.619)
+Epoch: [66][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2234 (0.2548)	Prec@1 93.359 (91.647)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.4785 (0.4785)	Prec@1 84.375 (84.375)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6110 (0.4547)	Prec@1 82.812 (85.248)
+ * Prec@1 85.190
+current lr 7.48729e-03
+Epoch: [67][0/196]	Time 0.334 (0.334)	Data 0.218 (0.218)	Loss 0.2662 (0.2662)	Prec@1 91.797 (91.797)
+Epoch: [67][50/196]	Time 0.103 (0.112)	Data 0.000 (0.005)	Loss 0.2757 (0.2451)	Prec@1 90.625 (92.057)
+Epoch: [67][100/196]	Time 0.111 (0.108)	Data 0.000 (0.002)	Loss 0.1932 (0.2493)	Prec@1 93.359 (91.894)
+Epoch: [67][150/196]	Time 0.106 (0.110)	Data 0.000 (0.002)	Loss 0.2483 (0.2505)	Prec@1 93.359 (91.900)
+Test: [0/79]	Time 0.213 (0.213)	Loss 0.2702 (0.2702)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.4291 (0.3759)	Prec@1 87.500 (87.929)
+ * Prec@1 87.570
+current lr 7.41877e-03
+Epoch: [68][0/196]	Time 0.350 (0.350)	Data 0.237 (0.237)	Loss 0.2172 (0.2172)	Prec@1 93.750 (93.750)
+Epoch: [68][50/196]	Time 0.113 (0.116)	Data 0.000 (0.005)	Loss 0.2922 (0.2611)	Prec@1 89.453 (91.529)
+Epoch: [68][100/196]	Time 0.111 (0.109)	Data 0.000 (0.003)	Loss 0.2191 (0.2596)	Prec@1 93.359 (91.642)
+Epoch: [68][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.1896 (0.2571)	Prec@1 91.797 (91.701)
+Test: [0/79]	Time 0.198 (0.198)	Loss 0.4324 (0.4324)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4107 (0.4538)	Prec@1 89.062 (85.447)
+ * Prec@1 85.590
+current lr 7.34965e-03
+Epoch: [69][0/196]	Time 0.386 (0.386)	Data 0.269 (0.269)	Loss 0.2068 (0.2068)	Prec@1 94.531 (94.531)
+Epoch: [69][50/196]	Time 0.113 (0.117)	Data 0.000 (0.006)	Loss 0.2938 (0.2334)	Prec@1 88.672 (92.318)
+Epoch: [69][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2930 (0.2417)	Prec@1 92.188 (92.075)
+Epoch: [69][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.3023 (0.2468)	Prec@1 90.625 (91.908)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.3123 (0.3123)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.019 (0.026)	Loss 0.5818 (0.4379)	Prec@1 82.031 (85.968)
+ * Prec@1 85.970
+current lr 7.27995e-03
+Epoch: [70][0/196]	Time 0.400 (0.400)	Data 0.290 (0.290)	Loss 0.2140 (0.2140)	Prec@1 93.359 (93.359)
+Epoch: [70][50/196]	Time 0.111 (0.116)	Data 0.000 (0.006)	Loss 0.3138 (0.2468)	Prec@1 89.844 (91.919)
+Epoch: [70][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2065 (0.2476)	Prec@1 93.359 (91.913)
+Epoch: [70][150/196]	Time 0.096 (0.111)	Data 0.000 (0.002)	Loss 0.2637 (0.2492)	Prec@1 91.406 (91.903)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.4674 (0.4674)	Prec@1 82.031 (82.031)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.4563 (0.5198)	Prec@1 85.156 (82.996)
+ * Prec@1 82.960
+current lr 7.20970e-03
+Epoch: [71][0/196]	Time 0.390 (0.390)	Data 0.276 (0.276)	Loss 0.1672 (0.1672)	Prec@1 94.922 (94.922)
+Epoch: [71][50/196]	Time 0.109 (0.117)	Data 0.000 (0.006)	Loss 0.2054 (0.2263)	Prec@1 93.359 (92.785)
+Epoch: [71][100/196]	Time 0.113 (0.115)	Data 0.000 (0.003)	Loss 0.2525 (0.2375)	Prec@1 91.406 (92.389)
+Epoch: [71][150/196]	Time 0.109 (0.113)	Data 0.000 (0.002)	Loss 0.2809 (0.2450)	Prec@1 91.406 (92.030)
+Test: [0/79]	Time 0.200 (0.200)	Loss 0.2693 (0.2693)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.3294 (0.3536)	Prec@1 90.625 (88.419)
+ * Prec@1 88.490
+current lr 7.13890e-03
+Epoch: [72][0/196]	Time 0.355 (0.355)	Data 0.242 (0.242)	Loss 0.2169 (0.2169)	Prec@1 91.406 (91.406)
+Epoch: [72][50/196]	Time 0.112 (0.116)	Data 0.000 (0.005)	Loss 0.2347 (0.2358)	Prec@1 93.359 (92.264)
+Epoch: [72][100/196]	Time 0.113 (0.114)	Data 0.000 (0.003)	Loss 0.2641 (0.2379)	Prec@1 91.797 (92.203)
+Epoch: [72][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2870 (0.2420)	Prec@1 88.672 (92.074)
+Test: [0/79]	Time 0.196 (0.196)	Loss 0.3694 (0.3694)	Prec@1 85.938 (85.938)
+Test: [50/79]	Time 0.019 (0.023)	Loss 0.4287 (0.4086)	Prec@1 82.812 (86.719)
+ * Prec@1 86.900
+current lr 7.06757e-03
+Epoch: [73][0/196]	Time 0.360 (0.360)	Data 0.244 (0.244)	Loss 0.2149 (0.2149)	Prec@1 93.750 (93.750)
+Epoch: [73][50/196]	Time 0.115 (0.117)	Data 0.000 (0.005)	Loss 0.2128 (0.2257)	Prec@1 92.578 (92.793)
+Epoch: [73][100/196]	Time 0.108 (0.114)	Data 0.000 (0.003)	Loss 0.2248 (0.2373)	Prec@1 93.359 (92.416)
+Epoch: [73][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2296 (0.2409)	Prec@1 91.797 (92.200)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.5187 (0.5187)	Prec@1 82.812 (82.812)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5380 (0.4918)	Prec@1 82.812 (84.007)
+ * Prec@1 84.010
+current lr 6.99574e-03
+Epoch: [74][0/196]	Time 0.338 (0.338)	Data 0.217 (0.217)	Loss 0.2735 (0.2735)	Prec@1 91.016 (91.016)
+Epoch: [74][50/196]	Time 0.110 (0.107)	Data 0.000 (0.005)	Loss 0.2428 (0.2452)	Prec@1 92.578 (92.126)
+Epoch: [74][100/196]	Time 0.110 (0.109)	Data 0.000 (0.002)	Loss 0.2649 (0.2376)	Prec@1 91.797 (92.242)
+Epoch: [74][150/196]	Time 0.113 (0.110)	Data 0.000 (0.002)	Loss 0.2515 (0.2409)	Prec@1 91.406 (92.141)
+Test: [0/79]	Time 0.198 (0.198)	Loss 0.2554 (0.2554)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3498 (0.3945)	Prec@1 85.938 (87.638)
+ * Prec@1 87.620
+current lr 6.92342e-03
+Epoch: [75][0/196]	Time 0.354 (0.354)	Data 0.235 (0.235)	Loss 0.2231 (0.2231)	Prec@1 92.969 (92.969)
+Epoch: [75][50/196]	Time 0.098 (0.111)	Data 0.000 (0.005)	Loss 0.2219 (0.2350)	Prec@1 91.797 (92.509)
+Epoch: [75][100/196]	Time 0.109 (0.109)	Data 0.000 (0.003)	Loss 0.1870 (0.2327)	Prec@1 94.531 (92.555)
+Epoch: [75][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2705 (0.2374)	Prec@1 89.062 (92.306)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.8217 (0.8217)	Prec@1 74.219 (74.219)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.8071 (0.7410)	Prec@1 75.781 (77.374)
+ * Prec@1 77.180
+current lr 6.85062e-03
+Epoch: [76][0/196]	Time 0.363 (0.363)	Data 0.247 (0.247)	Loss 0.1980 (0.1980)	Prec@1 94.531 (94.531)
+Epoch: [76][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.2514 (0.2327)	Prec@1 91.016 (92.310)
+Epoch: [76][100/196]	Time 0.111 (0.109)	Data 0.000 (0.003)	Loss 0.2109 (0.2374)	Prec@1 91.406 (92.172)
+Epoch: [76][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.2865 (0.2372)	Prec@1 89.453 (92.182)
+Test: [0/79]	Time 0.190 (0.190)	Loss 0.4150 (0.4150)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.4635 (0.4501)	Prec@1 82.031 (85.156)
+ * Prec@1 85.150
+current lr 6.77737e-03
+Epoch: [77][0/196]	Time 0.357 (0.357)	Data 0.245 (0.245)	Loss 0.2638 (0.2638)	Prec@1 91.016 (91.016)
+Epoch: [77][50/196]	Time 0.115 (0.117)	Data 0.000 (0.005)	Loss 0.3115 (0.2337)	Prec@1 90.234 (92.593)
+Epoch: [77][100/196]	Time 0.097 (0.113)	Data 0.000 (0.003)	Loss 0.2156 (0.2335)	Prec@1 92.188 (92.509)
+Epoch: [77][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.2969 (0.2309)	Prec@1 92.578 (92.568)
+Test: [0/79]	Time 0.195 (0.195)	Loss 0.6684 (0.6684)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.6746 (0.5311)	Prec@1 79.688 (83.441)
+ * Prec@1 83.500
+current lr 6.70369e-03
+Epoch: [78][0/196]	Time 0.377 (0.377)	Data 0.260 (0.260)	Loss 0.2531 (0.2531)	Prec@1 91.406 (91.406)
+Epoch: [78][50/196]	Time 0.113 (0.118)	Data 0.000 (0.005)	Loss 0.2440 (0.2434)	Prec@1 92.188 (91.958)
+Epoch: [78][100/196]	Time 0.110 (0.115)	Data 0.000 (0.003)	Loss 0.2917 (0.2415)	Prec@1 89.062 (92.157)
+Epoch: [78][150/196]	Time 0.077 (0.111)	Data 0.001 (0.002)	Loss 0.2141 (0.2376)	Prec@1 93.750 (92.265)
+Test: [0/79]	Time 0.187 (0.187)	Loss 0.3784 (0.3784)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5005 (0.4608)	Prec@1 85.938 (85.325)
+ * Prec@1 85.210
+current lr 6.62959e-03
+Epoch: [79][0/196]	Time 0.383 (0.383)	Data 0.269 (0.269)	Loss 0.2226 (0.2226)	Prec@1 92.969 (92.969)
+Epoch: [79][50/196]	Time 0.115 (0.117)	Data 0.000 (0.006)	Loss 0.1631 (0.2175)	Prec@1 95.703 (92.930)
+Epoch: [79][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2495 (0.2268)	Prec@1 92.969 (92.698)
+Epoch: [79][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2693 (0.2341)	Prec@1 92.188 (92.475)
+Test: [0/79]	Time 0.196 (0.196)	Loss 0.4021 (0.4021)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4145 (0.3922)	Prec@1 87.500 (87.331)
+ * Prec@1 87.030
+current lr 6.55508e-03
+Epoch: [80][0/196]	Time 0.356 (0.356)	Data 0.241 (0.241)	Loss 0.2929 (0.2929)	Prec@1 90.234 (90.234)
+Epoch: [80][50/196]	Time 0.115 (0.116)	Data 0.000 (0.005)	Loss 0.2675 (0.2303)	Prec@1 89.062 (92.402)
+Epoch: [80][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.3628 (0.2334)	Prec@1 87.500 (92.338)
+Epoch: [80][150/196]	Time 0.109 (0.113)	Data 0.000 (0.002)	Loss 0.2033 (0.2318)	Prec@1 94.141 (92.413)
+Test: [0/79]	Time 0.214 (0.214)	Loss 0.5965 (0.5965)	Prec@1 81.250 (81.250)
+Test: [50/79]	Time 0.014 (0.023)	Loss 0.4956 (0.5353)	Prec@1 85.156 (83.885)
+ * Prec@1 83.610
+current lr 6.48020e-03
+Epoch: [81][0/196]	Time 0.357 (0.357)	Data 0.242 (0.242)	Loss 0.1628 (0.1628)	Prec@1 94.531 (94.531)
+Epoch: [81][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.2643 (0.2324)	Prec@1 92.578 (92.494)
+Epoch: [81][100/196]	Time 0.112 (0.114)	Data 0.000 (0.003)	Loss 0.2032 (0.2247)	Prec@1 92.969 (92.706)
+Epoch: [81][150/196]	Time 0.109 (0.113)	Data 0.000 (0.002)	Loss 0.2307 (0.2271)	Prec@1 90.625 (92.596)
+Test: [0/79]	Time 0.199 (0.199)	Loss 0.2759 (0.2759)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3417 (0.3532)	Prec@1 86.719 (88.251)
+ * Prec@1 88.530
+current lr 6.40496e-03
+Epoch: [82][0/196]	Time 0.349 (0.349)	Data 0.271 (0.271)	Loss 0.1684 (0.1684)	Prec@1 95.703 (95.703)
+Epoch: [82][50/196]	Time 0.116 (0.108)	Data 0.000 (0.006)	Loss 0.2257 (0.2181)	Prec@1 92.578 (92.900)
+Epoch: [82][100/196]	Time 0.110 (0.110)	Data 0.001 (0.003)	Loss 0.1938 (0.2285)	Prec@1 94.531 (92.586)
+Epoch: [82][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2658 (0.2273)	Prec@1 91.016 (92.596)
+Test: [0/79]	Time 0.217 (0.217)	Loss 0.4822 (0.4822)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4773 (0.4479)	Prec@1 85.156 (86.137)
+ * Prec@1 86.340
+current lr 6.32937e-03
+Epoch: [83][0/196]	Time 0.355 (0.355)	Data 0.241 (0.241)	Loss 0.1583 (0.1583)	Prec@1 95.312 (95.312)
+Epoch: [83][50/196]	Time 0.099 (0.110)	Data 0.000 (0.005)	Loss 0.1309 (0.2181)	Prec@1 96.094 (93.061)
+Epoch: [83][100/196]	Time 0.109 (0.109)	Data 0.000 (0.003)	Loss 0.2506 (0.2215)	Prec@1 92.969 (92.822)
+Epoch: [83][150/196]	Time 0.116 (0.109)	Data 0.000 (0.002)	Loss 0.1741 (0.2251)	Prec@1 95.703 (92.645)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.5213 (0.5213)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.3508 (0.4391)	Prec@1 88.281 (85.769)
+ * Prec@1 85.690
+current lr 6.25345e-03
+Epoch: [84][0/196]	Time 0.345 (0.345)	Data 0.230 (0.230)	Loss 0.1699 (0.1699)	Prec@1 96.094 (96.094)
+Epoch: [84][50/196]	Time 0.113 (0.116)	Data 0.000 (0.005)	Loss 0.1468 (0.2266)	Prec@1 94.531 (92.747)
+Epoch: [84][100/196]	Time 0.109 (0.109)	Data 0.000 (0.003)	Loss 0.2356 (0.2282)	Prec@1 92.578 (92.509)
+Epoch: [84][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.1860 (0.2260)	Prec@1 94.922 (92.588)
+Test: [0/79]	Time 0.210 (0.210)	Loss 0.3263 (0.3263)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.061 (0.027)	Loss 0.5160 (0.4325)	Prec@1 85.938 (86.091)
+ * Prec@1 85.740
+current lr 6.17723e-03
+Epoch: [85][0/196]	Time 0.372 (0.372)	Data 0.250 (0.250)	Loss 0.2244 (0.2244)	Prec@1 92.969 (92.969)
+Epoch: [85][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.2079 (0.2100)	Prec@1 93.359 (93.260)
+Epoch: [85][100/196]	Time 0.095 (0.112)	Data 0.000 (0.003)	Loss 0.1805 (0.2163)	Prec@1 94.141 (92.888)
+Epoch: [85][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2428 (0.2203)	Prec@1 92.969 (92.793)
+Test: [0/79]	Time 0.216 (0.216)	Loss 0.6160 (0.6160)	Prec@1 80.469 (80.469)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.8371 (0.7399)	Prec@1 71.875 (78.768)
+ * Prec@1 78.410
+current lr 6.10072e-03
+Epoch: [86][0/196]	Time 0.384 (0.384)	Data 0.269 (0.269)	Loss 0.2269 (0.2269)	Prec@1 93.359 (93.359)
+Epoch: [86][50/196]	Time 0.114 (0.117)	Data 0.000 (0.006)	Loss 0.1570 (0.2126)	Prec@1 94.922 (93.191)
+Epoch: [86][100/196]	Time 0.108 (0.114)	Data 0.000 (0.003)	Loss 0.2398 (0.2140)	Prec@1 92.578 (93.147)
+Epoch: [86][150/196]	Time 0.115 (0.110)	Data 0.000 (0.002)	Loss 0.2496 (0.2143)	Prec@1 91.406 (93.101)
+Test: [0/79]	Time 0.195 (0.195)	Loss 0.3594 (0.3594)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.3862 (0.4132)	Prec@1 88.281 (86.994)
+ * Prec@1 86.890
+current lr 6.02394e-03
+Epoch: [87][0/196]	Time 0.380 (0.380)	Data 0.263 (0.263)	Loss 0.2085 (0.2085)	Prec@1 93.359 (93.359)
+Epoch: [87][50/196]	Time 0.115 (0.116)	Data 0.000 (0.005)	Loss 0.2160 (0.2167)	Prec@1 91.797 (92.984)
+Epoch: [87][100/196]	Time 0.112 (0.114)	Data 0.000 (0.003)	Loss 0.2012 (0.2172)	Prec@1 93.750 (92.934)
+Epoch: [87][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.2130 (0.2188)	Prec@1 94.531 (92.883)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.3461 (0.3461)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.4619 (0.3854)	Prec@1 85.938 (87.868)
+ * Prec@1 87.840
+current lr 5.94691e-03
+Epoch: [88][0/196]	Time 0.352 (0.352)	Data 0.237 (0.237)	Loss 0.1972 (0.1972)	Prec@1 94.141 (94.141)
+Epoch: [88][50/196]	Time 0.112 (0.116)	Data 0.000 (0.005)	Loss 0.2171 (0.2160)	Prec@1 92.969 (93.122)
+Epoch: [88][100/196]	Time 0.112 (0.114)	Data 0.000 (0.003)	Loss 0.1812 (0.2150)	Prec@1 94.531 (93.162)
+Epoch: [88][150/196]	Time 0.109 (0.113)	Data 0.000 (0.002)	Loss 0.2183 (0.2188)	Prec@1 91.406 (92.951)
+Test: [0/79]	Time 0.194 (0.194)	Loss 0.3856 (0.3856)	Prec@1 85.156 (85.156)
+Test: [50/79]	Time 0.015 (0.021)	Loss 0.5151 (0.4364)	Prec@1 85.938 (85.892)
+ * Prec@1 86.140
+current lr 5.86965e-03
+Epoch: [89][0/196]	Time 0.354 (0.354)	Data 0.240 (0.240)	Loss 0.2169 (0.2169)	Prec@1 93.750 (93.750)
+Epoch: [89][50/196]	Time 0.117 (0.116)	Data 0.000 (0.005)	Loss 0.2199 (0.2109)	Prec@1 93.359 (93.252)
+Epoch: [89][100/196]	Time 0.114 (0.114)	Data 0.000 (0.003)	Loss 0.2101 (0.2095)	Prec@1 93.750 (93.317)
+Epoch: [89][150/196]	Time 0.112 (0.113)	Data 0.000 (0.002)	Loss 0.2191 (0.2117)	Prec@1 93.359 (93.217)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.3424 (0.3424)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.5919 (0.4177)	Prec@1 85.156 (86.581)
+ * Prec@1 86.680
+current lr 5.79217e-03
+Epoch: [90][0/196]	Time 0.343 (0.343)	Data 0.240 (0.240)	Loss 0.2268 (0.2268)	Prec@1 93.359 (93.359)
+Epoch: [90][50/196]	Time 0.112 (0.109)	Data 0.000 (0.005)	Loss 0.1077 (0.2037)	Prec@1 96.484 (93.313)
+Epoch: [90][100/196]	Time 0.109 (0.110)	Data 0.000 (0.003)	Loss 0.2382 (0.2088)	Prec@1 91.406 (93.162)
+Epoch: [90][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2352 (0.2136)	Prec@1 94.141 (92.984)
+Test: [0/79]	Time 0.235 (0.235)	Loss 0.3729 (0.3729)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.023 (0.027)	Loss 0.3501 (0.3778)	Prec@1 88.281 (87.607)
+ * Prec@1 87.570
+current lr 5.71451e-03
+Epoch: [91][0/196]	Time 0.335 (0.335)	Data 0.230 (0.230)	Loss 0.1804 (0.1804)	Prec@1 95.312 (95.312)
+Epoch: [91][50/196]	Time 0.075 (0.108)	Data 0.000 (0.005)	Loss 0.1927 (0.2065)	Prec@1 92.578 (93.244)
+Epoch: [91][100/196]	Time 0.108 (0.108)	Data 0.000 (0.003)	Loss 0.1868 (0.2080)	Prec@1 94.922 (93.321)
+Epoch: [91][150/196]	Time 0.109 (0.110)	Data 0.000 (0.002)	Loss 0.2029 (0.2126)	Prec@1 93.359 (93.103)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.3011 (0.3011)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3459 (0.3517)	Prec@1 89.844 (88.588)
+ * Prec@1 88.530
+current lr 5.63667e-03
+Epoch: [92][0/196]	Time 0.352 (0.352)	Data 0.239 (0.239)	Loss 0.2129 (0.2129)	Prec@1 93.359 (93.359)
+Epoch: [92][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.2545 (0.2070)	Prec@1 92.969 (93.176)
+Epoch: [92][100/196]	Time 0.106 (0.109)	Data 0.000 (0.003)	Loss 0.2575 (0.2053)	Prec@1 91.797 (93.282)
+Epoch: [92][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2849 (0.2051)	Prec@1 92.188 (93.339)
+Test: [0/79]	Time 0.222 (0.222)	Loss 0.4213 (0.4213)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4119 (0.5151)	Prec@1 85.938 (84.130)
+ * Prec@1 84.120
+current lr 5.55867e-03
+Epoch: [93][0/196]	Time 0.357 (0.357)	Data 0.243 (0.243)	Loss 0.2315 (0.2315)	Prec@1 93.750 (93.750)
+Epoch: [93][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.2016 (0.2134)	Prec@1 93.359 (93.015)
+Epoch: [93][100/196]	Time 0.103 (0.112)	Data 0.000 (0.003)	Loss 0.2454 (0.2061)	Prec@1 91.797 (93.243)
+Epoch: [93][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.1313 (0.2069)	Prec@1 96.484 (93.199)
+Test: [0/79]	Time 0.202 (0.202)	Loss 0.2829 (0.2829)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5171 (0.4286)	Prec@1 84.375 (86.566)
+ * Prec@1 86.520
+current lr 5.48054e-03
+Epoch: [94][0/196]	Time 0.354 (0.354)	Data 0.240 (0.240)	Loss 0.1661 (0.1661)	Prec@1 94.531 (94.531)
+Epoch: [94][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.1425 (0.1885)	Prec@1 95.703 (94.118)
+Epoch: [94][100/196]	Time 0.117 (0.114)	Data 0.000 (0.003)	Loss 0.1587 (0.2018)	Prec@1 95.703 (93.572)
+Epoch: [94][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.1839 (0.2031)	Prec@1 95.312 (93.543)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.3821 (0.3821)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4273 (0.4518)	Prec@1 85.156 (85.646)
+ * Prec@1 85.660
+current lr 5.40230e-03
+Epoch: [95][0/196]	Time 0.353 (0.353)	Data 0.237 (0.237)	Loss 0.1723 (0.1723)	Prec@1 94.531 (94.531)
+Epoch: [95][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.1643 (0.2070)	Prec@1 94.922 (93.329)
+Epoch: [95][100/196]	Time 0.113 (0.114)	Data 0.000 (0.003)	Loss 0.2012 (0.2008)	Prec@1 93.750 (93.541)
+Epoch: [95][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.1917 (0.2040)	Prec@1 93.750 (93.473)
+Test: [0/79]	Time 0.227 (0.227)	Loss 0.4200 (0.4200)	Prec@1 85.938 (85.938)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5528 (0.4304)	Prec@1 84.375 (86.259)
+ * Prec@1 86.550
+current lr 5.32395e-03
+Epoch: [96][0/196]	Time 0.356 (0.356)	Data 0.236 (0.236)	Loss 0.1426 (0.1426)	Prec@1 95.312 (95.312)
+Epoch: [96][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.1520 (0.1939)	Prec@1 95.312 (93.627)
+Epoch: [96][100/196]	Time 0.113 (0.114)	Data 0.000 (0.003)	Loss 0.1905 (0.2025)	Prec@1 93.359 (93.425)
+Epoch: [96][150/196]	Time 0.111 (0.113)	Data 0.000 (0.002)	Loss 0.2527 (0.2048)	Prec@1 92.578 (93.305)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.3517 (0.3517)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.021 (0.022)	Loss 0.5124 (0.4353)	Prec@1 83.594 (86.198)
+ * Prec@1 86.350
+current lr 5.24553e-03
+Epoch: [97][0/196]	Time 0.377 (0.377)	Data 0.263 (0.263)	Loss 0.1883 (0.1883)	Prec@1 94.531 (94.531)
+Epoch: [97][50/196]	Time 0.116 (0.117)	Data 0.000 (0.005)	Loss 0.2009 (0.2069)	Prec@1 92.969 (93.421)
+Epoch: [97][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.2738 (0.2023)	Prec@1 91.406 (93.444)
+Epoch: [97][150/196]	Time 0.114 (0.113)	Data 0.000 (0.002)	Loss 0.2050 (0.2054)	Prec@1 92.578 (93.302)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.4161 (0.4161)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.4251 (0.4580)	Prec@1 87.500 (85.723)
+ * Prec@1 85.590
+current lr 5.16705e-03
+Epoch: [98][0/196]	Time 0.355 (0.355)	Data 0.251 (0.251)	Loss 0.2101 (0.2101)	Prec@1 92.188 (92.188)
+Epoch: [98][50/196]	Time 0.117 (0.111)	Data 0.000 (0.005)	Loss 0.1363 (0.1874)	Prec@1 94.531 (93.919)
+Epoch: [98][100/196]	Time 0.105 (0.111)	Data 0.000 (0.003)	Loss 0.2013 (0.1878)	Prec@1 92.969 (93.912)
+Epoch: [98][150/196]	Time 0.109 (0.111)	Data 0.000 (0.002)	Loss 0.2670 (0.1945)	Prec@1 91.016 (93.701)
+Test: [0/79]	Time 0.241 (0.241)	Loss 0.4879 (0.4879)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.020 (0.027)	Loss 0.3718 (0.4741)	Prec@1 87.500 (85.325)
+ * Prec@1 85.500
+current lr 5.08854e-03
+Epoch: [99][0/196]	Time 0.448 (0.448)	Data 0.334 (0.334)	Loss 0.1835 (0.1835)	Prec@1 94.922 (94.922)
+Epoch: [99][50/196]	Time 0.109 (0.109)	Data 0.000 (0.007)	Loss 0.1534 (0.2029)	Prec@1 95.703 (93.528)
+Epoch: [99][100/196]	Time 0.111 (0.110)	Data 0.000 (0.004)	Loss 0.2134 (0.1989)	Prec@1 92.969 (93.591)
+Epoch: [99][150/196]	Time 0.108 (0.110)	Data 0.000 (0.003)	Loss 0.1519 (0.1956)	Prec@1 94.531 (93.722)
+Test: [0/79]	Time 0.197 (0.197)	Loss 0.3034 (0.3034)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4617 (0.4028)	Prec@1 85.156 (87.760)
+ * Prec@1 87.620
+current lr 5.01000e-03
+Epoch: [100][0/196]	Time 0.348 (0.348)	Data 0.234 (0.234)	Loss 0.1874 (0.1874)	Prec@1 94.141 (94.141)
+Epoch: [100][50/196]	Time 0.116 (0.117)	Data 0.000 (0.005)	Loss 0.1748 (0.1859)	Prec@1 94.141 (93.788)
+Epoch: [100][100/196]	Time 0.110 (0.109)	Data 0.000 (0.003)	Loss 0.1740 (0.1904)	Prec@1 94.141 (93.599)
+Epoch: [100][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.1916 (0.1954)	Prec@1 94.922 (93.504)
+Test: [0/79]	Time 0.199 (0.199)	Loss 0.3431 (0.3431)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3514 (0.4186)	Prec@1 86.719 (86.841)
+ * Prec@1 87.010
+current lr 4.93146e-03
+Epoch: [101][0/196]	Time 0.362 (0.362)	Data 0.248 (0.248)	Loss 0.1576 (0.1576)	Prec@1 94.531 (94.531)
+Epoch: [101][50/196]	Time 0.108 (0.117)	Data 0.000 (0.005)	Loss 0.1676 (0.1727)	Prec@1 93.750 (94.478)
+Epoch: [101][100/196]	Time 0.097 (0.111)	Data 0.000 (0.003)	Loss 0.1367 (0.1865)	Prec@1 95.312 (94.001)
+Epoch: [101][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.1676 (0.1879)	Prec@1 94.922 (94.004)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.3198 (0.3198)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.020 (0.026)	Loss 0.3689 (0.4072)	Prec@1 90.625 (86.887)
+ * Prec@1 87.310
+current lr 4.85295e-03
+Epoch: [102][0/196]	Time 0.376 (0.376)	Data 0.258 (0.258)	Loss 0.1684 (0.1684)	Prec@1 93.359 (93.359)
+Epoch: [102][50/196]	Time 0.112 (0.117)	Data 0.000 (0.005)	Loss 0.1691 (0.1818)	Prec@1 95.312 (94.187)
+Epoch: [102][100/196]	Time 0.117 (0.114)	Data 0.000 (0.003)	Loss 0.1842 (0.1827)	Prec@1 93.750 (94.059)
+Epoch: [102][150/196]	Time 0.115 (0.110)	Data 0.000 (0.002)	Loss 0.1476 (0.1835)	Prec@1 94.141 (94.040)
+Test: [0/79]	Time 0.199 (0.199)	Loss 0.3113 (0.3113)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4265 (0.4389)	Prec@1 85.938 (86.719)
+ * Prec@1 86.640
+current lr 4.77447e-03
+Epoch: [103][0/196]	Time 0.346 (0.346)	Data 0.233 (0.233)	Loss 0.2021 (0.2021)	Prec@1 94.141 (94.141)
+Epoch: [103][50/196]	Time 0.112 (0.118)	Data 0.000 (0.005)	Loss 0.2082 (0.1761)	Prec@1 92.578 (94.416)
+Epoch: [103][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.2149 (0.1813)	Prec@1 94.141 (94.183)
+Epoch: [103][150/196]	Time 0.105 (0.113)	Data 0.000 (0.002)	Loss 0.1700 (0.1817)	Prec@1 95.703 (94.164)
+Test: [0/79]	Time 0.200 (0.200)	Loss 0.3939 (0.3939)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3878 (0.3862)	Prec@1 88.281 (87.944)
+ * Prec@1 87.960
+current lr 4.69605e-03
+Epoch: [104][0/196]	Time 0.354 (0.354)	Data 0.239 (0.239)	Loss 0.1548 (0.1548)	Prec@1 92.969 (92.969)
+Epoch: [104][50/196]	Time 0.118 (0.117)	Data 0.000 (0.005)	Loss 0.2065 (0.1697)	Prec@1 93.750 (94.531)
+Epoch: [104][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.1628 (0.1754)	Prec@1 95.312 (94.338)
+Epoch: [104][150/196]	Time 0.117 (0.113)	Data 0.000 (0.002)	Loss 0.2290 (0.1849)	Prec@1 92.188 (94.014)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.5118 (0.5118)	Prec@1 83.594 (83.594)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5559 (0.4931)	Prec@1 84.375 (85.156)
+ * Prec@1 85.100
+current lr 4.61770e-03
+Epoch: [105][0/196]	Time 0.348 (0.348)	Data 0.231 (0.231)	Loss 0.1159 (0.1159)	Prec@1 97.266 (97.266)
+Epoch: [105][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.1839 (0.1762)	Prec@1 94.531 (94.317)
+Epoch: [105][100/196]	Time 0.114 (0.114)	Data 0.000 (0.003)	Loss 0.1443 (0.1742)	Prec@1 94.922 (94.423)
+Epoch: [105][150/196]	Time 0.109 (0.113)	Data 0.000 (0.002)	Loss 0.1739 (0.1791)	Prec@1 94.922 (94.275)
+Test: [0/79]	Time 0.214 (0.214)	Loss 0.3195 (0.3195)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.020 (0.023)	Loss 0.4947 (0.3825)	Prec@1 85.156 (88.097)
+ * Prec@1 88.120
+current lr 4.53946e-03
+Epoch: [106][0/196]	Time 0.350 (0.350)	Data 0.244 (0.244)	Loss 0.1569 (0.1569)	Prec@1 94.141 (94.141)
+Epoch: [106][50/196]	Time 0.118 (0.112)	Data 0.000 (0.005)	Loss 0.1718 (0.1695)	Prec@1 95.312 (94.424)
+Epoch: [106][100/196]	Time 0.110 (0.112)	Data 0.000 (0.003)	Loss 0.2429 (0.1788)	Prec@1 92.188 (94.117)
+Epoch: [106][150/196]	Time 0.114 (0.112)	Data 0.000 (0.002)	Loss 0.1648 (0.1819)	Prec@1 93.750 (94.037)
+Test: [0/79]	Time 0.212 (0.212)	Loss 0.3064 (0.3064)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3184 (0.3368)	Prec@1 91.406 (89.277)
+ * Prec@1 89.430
+current lr 4.46133e-03
+Epoch: [107][0/196]	Time 0.395 (0.395)	Data 0.278 (0.278)	Loss 0.1669 (0.1669)	Prec@1 94.141 (94.141)
+Epoch: [107][50/196]	Time 0.116 (0.107)	Data 0.000 (0.006)	Loss 0.1347 (0.1726)	Prec@1 95.703 (94.447)
+Epoch: [107][100/196]	Time 0.112 (0.110)	Data 0.000 (0.003)	Loss 0.2244 (0.1708)	Prec@1 93.359 (94.605)
+Epoch: [107][150/196]	Time 0.114 (0.110)	Data 0.000 (0.002)	Loss 0.1525 (0.1749)	Prec@1 95.703 (94.438)
+Test: [0/79]	Time 0.201 (0.201)	Loss 0.3737 (0.3737)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4200 (0.4100)	Prec@1 88.281 (87.102)
+ * Prec@1 87.230
+current lr 4.38333e-03
+Epoch: [108][0/196]	Time 0.360 (0.360)	Data 0.245 (0.245)	Loss 0.1785 (0.1785)	Prec@1 94.922 (94.922)
+Epoch: [108][50/196]	Time 0.105 (0.114)	Data 0.000 (0.005)	Loss 0.1789 (0.1717)	Prec@1 95.703 (94.738)
+Epoch: [108][100/196]	Time 0.110 (0.109)	Data 0.000 (0.003)	Loss 0.1504 (0.1766)	Prec@1 94.922 (94.466)
+Epoch: [108][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.2002 (0.1743)	Prec@1 94.141 (94.490)
+Test: [0/79]	Time 0.202 (0.202)	Loss 0.4275 (0.4275)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4608 (0.3942)	Prec@1 84.375 (87.316)
+ * Prec@1 87.330
+current lr 4.30549e-03
+Epoch: [109][0/196]	Time 0.347 (0.347)	Data 0.238 (0.238)	Loss 0.1545 (0.1545)	Prec@1 94.922 (94.922)
+Epoch: [109][50/196]	Time 0.116 (0.116)	Data 0.000 (0.005)	Loss 0.1463 (0.1828)	Prec@1 95.703 (93.980)
+Epoch: [109][100/196]	Time 0.074 (0.109)	Data 0.000 (0.003)	Loss 0.1687 (0.1816)	Prec@1 94.531 (94.013)
+Epoch: [109][150/196]	Time 0.112 (0.109)	Data 0.000 (0.002)	Loss 0.2449 (0.1788)	Prec@1 91.797 (94.143)
+Test: [0/79]	Time 0.210 (0.210)	Loss 0.2414 (0.2414)	Prec@1 92.188 (92.188)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.3299 (0.3873)	Prec@1 90.625 (88.327)
+ * Prec@1 88.210
+current lr 4.22783e-03
+Epoch: [110][0/196]	Time 0.354 (0.354)	Data 0.245 (0.245)	Loss 0.1724 (0.1724)	Prec@1 93.750 (93.750)
+Epoch: [110][50/196]	Time 0.112 (0.116)	Data 0.000 (0.005)	Loss 0.1838 (0.1754)	Prec@1 94.531 (94.401)
+Epoch: [110][100/196]	Time 0.114 (0.114)	Data 0.000 (0.003)	Loss 0.2297 (0.1692)	Prec@1 93.750 (94.612)
+Epoch: [110][150/196]	Time 0.117 (0.110)	Data 0.000 (0.002)	Loss 0.1873 (0.1710)	Prec@1 93.359 (94.560)
+Test: [0/79]	Time 0.248 (0.248)	Loss 0.3715 (0.3715)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.023 (0.027)	Loss 0.3224 (0.4222)	Prec@1 89.062 (87.224)
+ * Prec@1 87.330
+current lr 4.15035e-03
+Epoch: [111][0/196]	Time 0.358 (0.358)	Data 0.239 (0.239)	Loss 0.1806 (0.1806)	Prec@1 94.922 (94.922)
+Epoch: [111][50/196]	Time 0.111 (0.117)	Data 0.000 (0.005)	Loss 0.1592 (0.1604)	Prec@1 94.922 (95.083)
+Epoch: [111][100/196]	Time 0.111 (0.114)	Data 0.000 (0.003)	Loss 0.1953 (0.1621)	Prec@1 93.750 (95.050)
+Epoch: [111][150/196]	Time 0.102 (0.112)	Data 0.000 (0.002)	Loss 0.1855 (0.1669)	Prec@1 94.531 (94.767)
+Test: [0/79]	Time 0.201 (0.201)	Loss 0.3771 (0.3771)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.4260 (0.3958)	Prec@1 85.938 (87.454)
+ * Prec@1 87.340
+current lr 4.07309e-03
+Epoch: [112][0/196]	Time 0.361 (0.361)	Data 0.245 (0.245)	Loss 0.1566 (0.1566)	Prec@1 94.531 (94.531)
+Epoch: [112][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.1421 (0.1596)	Prec@1 95.312 (94.907)
+Epoch: [112][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.2096 (0.1625)	Prec@1 94.141 (94.872)
+Epoch: [112][150/196]	Time 0.108 (0.113)	Data 0.000 (0.002)	Loss 0.1276 (0.1668)	Prec@1 95.703 (94.720)
+Test: [0/79]	Time 0.217 (0.217)	Loss 0.3354 (0.3354)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3776 (0.3811)	Prec@1 88.281 (88.205)
+ * Prec@1 87.970
+current lr 3.99606e-03
+Epoch: [113][0/196]	Time 0.343 (0.343)	Data 0.231 (0.231)	Loss 0.0862 (0.0862)	Prec@1 97.656 (97.656)
+Epoch: [113][50/196]	Time 0.111 (0.116)	Data 0.000 (0.005)	Loss 0.1348 (0.1481)	Prec@1 95.703 (95.290)
+Epoch: [113][100/196]	Time 0.108 (0.114)	Data 0.000 (0.003)	Loss 0.1675 (0.1542)	Prec@1 95.312 (95.123)
+Epoch: [113][150/196]	Time 0.117 (0.113)	Data 0.000 (0.002)	Loss 0.2114 (0.1593)	Prec@1 94.531 (94.904)
+Test: [0/79]	Time 0.225 (0.225)	Loss 0.4381 (0.4381)	Prec@1 86.719 (86.719)
+Test: [50/79]	Time 0.020 (0.023)	Loss 0.4819 (0.4441)	Prec@1 84.375 (86.657)
+ * Prec@1 86.440
+current lr 3.91928e-03
+Epoch: [114][0/196]	Time 0.327 (0.327)	Data 0.248 (0.248)	Loss 0.0852 (0.0852)	Prec@1 97.656 (97.656)
+Epoch: [114][50/196]	Time 0.112 (0.116)	Data 0.000 (0.005)	Loss 0.1469 (0.1529)	Prec@1 95.312 (95.205)
+Epoch: [114][100/196]	Time 0.113 (0.114)	Data 0.000 (0.003)	Loss 0.1417 (0.1539)	Prec@1 95.703 (95.046)
+Epoch: [114][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.1359 (0.1582)	Prec@1 95.703 (94.875)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.3539 (0.3539)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4654 (0.3828)	Prec@1 85.156 (87.914)
+ * Prec@1 87.790
+current lr 3.84277e-03
+Epoch: [115][0/196]	Time 0.335 (0.335)	Data 0.223 (0.223)	Loss 0.1109 (0.1109)	Prec@1 96.875 (96.875)
+Epoch: [115][50/196]	Time 0.112 (0.107)	Data 0.000 (0.005)	Loss 0.1352 (0.1676)	Prec@1 95.703 (94.746)
+Epoch: [115][100/196]	Time 0.108 (0.109)	Data 0.000 (0.002)	Loss 0.1648 (0.1632)	Prec@1 94.922 (94.879)
+Epoch: [115][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.2571 (0.1658)	Prec@1 91.797 (94.746)
+Test: [0/79]	Time 0.189 (0.189)	Loss 0.3231 (0.3231)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4806 (0.3989)	Prec@1 86.719 (87.653)
+ * Prec@1 87.770
+current lr 3.76655e-03
+Epoch: [116][0/196]	Time 0.364 (0.364)	Data 0.249 (0.249)	Loss 0.2292 (0.2292)	Prec@1 91.797 (91.797)
+Epoch: [116][50/196]	Time 0.100 (0.112)	Data 0.000 (0.005)	Loss 0.2359 (0.1552)	Prec@1 93.359 (95.075)
+Epoch: [116][100/196]	Time 0.117 (0.109)	Data 0.000 (0.003)	Loss 0.1051 (0.1530)	Prec@1 96.875 (95.061)
+Epoch: [116][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.1515 (0.1538)	Prec@1 94.922 (95.085)
+Test: [0/79]	Time 0.193 (0.193)	Loss 0.3447 (0.3447)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4367 (0.3565)	Prec@1 85.938 (88.741)
+ * Prec@1 88.760
+current lr 3.69063e-03
+Epoch: [117][0/196]	Time 0.360 (0.360)	Data 0.239 (0.239)	Loss 0.1562 (0.1562)	Prec@1 95.312 (95.312)
+Epoch: [117][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.1560 (0.1368)	Prec@1 95.703 (95.833)
+Epoch: [117][100/196]	Time 0.112 (0.109)	Data 0.000 (0.003)	Loss 0.1467 (0.1447)	Prec@1 95.703 (95.510)
+Epoch: [117][150/196]	Time 0.109 (0.110)	Data 0.000 (0.002)	Loss 0.1466 (0.1504)	Prec@1 94.141 (95.240)
+Test: [0/79]	Time 0.199 (0.199)	Loss 0.2930 (0.2930)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.3110 (0.3418)	Prec@1 89.844 (89.537)
+ * Prec@1 89.410
+current lr 3.61504e-03
+Epoch: [118][0/196]	Time 0.343 (0.343)	Data 0.233 (0.233)	Loss 0.1265 (0.1265)	Prec@1 95.312 (95.312)
+Epoch: [118][50/196]	Time 0.110 (0.116)	Data 0.000 (0.005)	Loss 0.1374 (0.1360)	Prec@1 96.094 (95.627)
+Epoch: [118][100/196]	Time 0.076 (0.114)	Data 0.000 (0.003)	Loss 0.1090 (0.1378)	Prec@1 96.875 (95.575)
+Epoch: [118][150/196]	Time 0.114 (0.111)	Data 0.000 (0.002)	Loss 0.1405 (0.1441)	Prec@1 95.703 (95.356)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.2164 (0.2164)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.4021 (0.3888)	Prec@1 85.938 (87.898)
+ * Prec@1 88.140
+current lr 3.53980e-03
+Epoch: [119][0/196]	Time 0.340 (0.340)	Data 0.229 (0.229)	Loss 0.1157 (0.1157)	Prec@1 96.484 (96.484)
+Epoch: [119][50/196]	Time 0.114 (0.118)	Data 0.000 (0.005)	Loss 0.1262 (0.1413)	Prec@1 95.703 (95.550)
+Epoch: [119][100/196]	Time 0.117 (0.116)	Data 0.000 (0.003)	Loss 0.1097 (0.1414)	Prec@1 97.266 (95.537)
+Epoch: [119][150/196]	Time 0.082 (0.112)	Data 0.000 (0.002)	Loss 0.1996 (0.1469)	Prec@1 92.969 (95.375)
+Test: [0/79]	Time 0.215 (0.215)	Loss 0.3537 (0.3537)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.2603 (0.3408)	Prec@1 91.406 (89.323)
+ * Prec@1 89.430
+current lr 3.46492e-03
+Epoch: [120][0/196]	Time 0.364 (0.364)	Data 0.244 (0.244)	Loss 0.1318 (0.1318)	Prec@1 94.922 (94.922)
+Epoch: [120][50/196]	Time 0.114 (0.116)	Data 0.000 (0.005)	Loss 0.1441 (0.1399)	Prec@1 95.703 (95.535)
+Epoch: [120][100/196]	Time 0.113 (0.114)	Data 0.000 (0.003)	Loss 0.1292 (0.1434)	Prec@1 94.531 (95.432)
+Epoch: [120][150/196]	Time 0.111 (0.113)	Data 0.000 (0.002)	Loss 0.1795 (0.1483)	Prec@1 95.703 (95.248)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.3048 (0.3048)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.021 (0.026)	Loss 0.4304 (0.4221)	Prec@1 85.156 (87.377)
+ * Prec@1 87.230
+current lr 3.39041e-03
+Epoch: [121][0/196]	Time 0.368 (0.368)	Data 0.248 (0.248)	Loss 0.1600 (0.1600)	Prec@1 94.141 (94.141)
+Epoch: [121][50/196]	Time 0.110 (0.117)	Data 0.000 (0.005)	Loss 0.1260 (0.1465)	Prec@1 96.875 (95.481)
+Epoch: [121][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.1649 (0.1424)	Prec@1 94.922 (95.475)
+Epoch: [121][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.1303 (0.1467)	Prec@1 96.484 (95.328)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.2489 (0.2489)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.015 (0.023)	Loss 0.4157 (0.3901)	Prec@1 85.938 (88.297)
+ * Prec@1 88.190
+current lr 3.31631e-03
+Epoch: [122][0/196]	Time 0.370 (0.370)	Data 0.257 (0.257)	Loss 0.1187 (0.1187)	Prec@1 95.703 (95.703)
+Epoch: [122][50/196]	Time 0.113 (0.117)	Data 0.000 (0.005)	Loss 0.0662 (0.1438)	Prec@1 98.047 (95.588)
+Epoch: [122][100/196]	Time 0.115 (0.114)	Data 0.000 (0.003)	Loss 0.1772 (0.1447)	Prec@1 92.969 (95.421)
+Epoch: [122][150/196]	Time 0.108 (0.113)	Data 0.000 (0.002)	Loss 0.1500 (0.1474)	Prec@1 95.312 (95.354)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.3248 (0.3248)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.016 (0.026)	Loss 0.3649 (0.3280)	Prec@1 89.062 (89.920)
+ * Prec@1 90.030
+current lr 3.24263e-03
+Epoch: [123][0/196]	Time 0.396 (0.396)	Data 0.304 (0.304)	Loss 0.1085 (0.1085)	Prec@1 96.875 (96.875)
+Epoch: [123][50/196]	Time 0.111 (0.109)	Data 0.000 (0.006)	Loss 0.1032 (0.1275)	Prec@1 96.484 (96.124)
+Epoch: [123][100/196]	Time 0.108 (0.110)	Data 0.000 (0.003)	Loss 0.1812 (0.1305)	Prec@1 93.750 (95.912)
+Epoch: [123][150/196]	Time 0.113 (0.110)	Data 0.000 (0.002)	Loss 0.1340 (0.1331)	Prec@1 95.312 (95.788)
+Test: [0/79]	Time 0.221 (0.221)	Loss 0.4331 (0.4331)	Prec@1 85.938 (85.938)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.5998 (0.3928)	Prec@1 82.812 (87.730)
+ * Prec@1 88.030
+current lr 3.16938e-03
+Epoch: [124][0/196]	Time 0.369 (0.369)	Data 0.257 (0.257)	Loss 0.1737 (0.1737)	Prec@1 93.750 (93.750)
+Epoch: [124][50/196]	Time 0.096 (0.107)	Data 0.002 (0.006)	Loss 0.1623 (0.1394)	Prec@1 94.531 (95.611)
+Epoch: [124][100/196]	Time 0.111 (0.109)	Data 0.000 (0.003)	Loss 0.1226 (0.1396)	Prec@1 96.484 (95.610)
+Epoch: [124][150/196]	Time 0.107 (0.110)	Data 0.000 (0.002)	Loss 0.1626 (0.1390)	Prec@1 94.531 (95.615)
+Test: [0/79]	Time 0.253 (0.253)	Loss 0.4038 (0.4038)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.023 (0.027)	Loss 0.6074 (0.4876)	Prec@1 80.469 (85.401)
+ * Prec@1 85.370
+current lr 3.09658e-03
+Epoch: [125][0/196]	Time 0.348 (0.348)	Data 0.234 (0.234)	Loss 0.0979 (0.0979)	Prec@1 96.875 (96.875)
+Epoch: [125][50/196]	Time 0.112 (0.116)	Data 0.000 (0.005)	Loss 0.1154 (0.1305)	Prec@1 95.312 (95.734)
+Epoch: [125][100/196]	Time 0.116 (0.109)	Data 0.000 (0.003)	Loss 0.1233 (0.1337)	Prec@1 96.875 (95.645)
+Epoch: [125][150/196]	Time 0.119 (0.110)	Data 0.000 (0.002)	Loss 0.1411 (0.1377)	Prec@1 95.703 (95.556)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.1888 (0.1888)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.024 (0.026)	Loss 0.2961 (0.3266)	Prec@1 92.188 (90.227)
+ * Prec@1 90.200
+current lr 3.02426e-03
+Epoch: [126][0/196]	Time 0.353 (0.353)	Data 0.237 (0.237)	Loss 0.1098 (0.1098)	Prec@1 96.875 (96.875)
+Epoch: [126][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.1353 (0.1321)	Prec@1 96.875 (95.910)
+Epoch: [126][100/196]	Time 0.095 (0.111)	Data 0.000 (0.003)	Loss 0.1105 (0.1322)	Prec@1 96.094 (95.866)
+Epoch: [126][150/196]	Time 0.110 (0.110)	Data 0.000 (0.002)	Loss 0.1442 (0.1343)	Prec@1 95.703 (95.845)
+Test: [0/79]	Time 0.212 (0.212)	Loss 0.3043 (0.3043)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4320 (0.3967)	Prec@1 85.938 (87.714)
+ * Prec@1 87.750
+current lr 2.95243e-03
+Epoch: [127][0/196]	Time 0.359 (0.359)	Data 0.242 (0.242)	Loss 0.1551 (0.1551)	Prec@1 95.312 (95.312)
+Epoch: [127][50/196]	Time 0.109 (0.116)	Data 0.000 (0.005)	Loss 0.1138 (0.1367)	Prec@1 96.094 (95.787)
+Epoch: [127][100/196]	Time 0.110 (0.114)	Data 0.000 (0.003)	Loss 0.0993 (0.1363)	Prec@1 97.266 (95.819)
+Epoch: [127][150/196]	Time 0.111 (0.110)	Data 0.000 (0.002)	Loss 0.1508 (0.1360)	Prec@1 95.312 (95.848)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.3290 (0.3290)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4294 (0.3780)	Prec@1 87.500 (88.235)
+ * Prec@1 88.360
+current lr 2.88110e-03
+Epoch: [128][0/196]	Time 0.360 (0.360)	Data 0.248 (0.248)	Loss 0.1213 (0.1213)	Prec@1 96.484 (96.484)
+Epoch: [128][50/196]	Time 0.109 (0.118)	Data 0.000 (0.005)	Loss 0.1185 (0.1139)	Prec@1 96.484 (96.661)
+Epoch: [128][100/196]	Time 0.109 (0.115)	Data 0.001 (0.003)	Loss 0.1326 (0.1196)	Prec@1 95.312 (96.411)
+Epoch: [128][150/196]	Time 0.089 (0.113)	Data 0.000 (0.002)	Loss 0.0873 (0.1223)	Prec@1 97.266 (96.202)
+Test: [0/79]	Time 0.254 (0.254)	Loss 0.2523 (0.2523)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.021 (0.027)	Loss 0.3719 (0.3490)	Prec@1 86.719 (89.445)
+ * Prec@1 89.530
+current lr 2.81030e-03
+Epoch: [129][0/196]	Time 0.361 (0.361)	Data 0.243 (0.243)	Loss 0.1499 (0.1499)	Prec@1 96.875 (96.875)
+Epoch: [129][50/196]	Time 0.114 (0.117)	Data 0.000 (0.005)	Loss 0.1490 (0.1294)	Prec@1 95.312 (96.147)
+Epoch: [129][100/196]	Time 0.109 (0.114)	Data 0.000 (0.003)	Loss 0.1332 (0.1278)	Prec@1 94.922 (96.113)
+Epoch: [129][150/196]	Time 0.118 (0.114)	Data 0.000 (0.002)	Loss 0.1024 (0.1267)	Prec@1 97.266 (96.109)
+Test: [0/79]	Time 0.215 (0.215)	Loss 0.3316 (0.3316)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.023 (0.024)	Loss 0.4750 (0.3976)	Prec@1 83.594 (88.251)
+ * Prec@1 88.310
+current lr 2.74005e-03
+Epoch: [130][0/196]	Time 0.359 (0.359)	Data 0.245 (0.245)	Loss 0.1757 (0.1757)	Prec@1 94.531 (94.531)
+Epoch: [130][50/196]	Time 0.113 (0.117)	Data 0.000 (0.005)	Loss 0.1167 (0.1212)	Prec@1 96.484 (96.255)
+Epoch: [130][100/196]	Time 0.110 (0.114)	Data 0.001 (0.003)	Loss 0.1275 (0.1211)	Prec@1 96.094 (96.268)
+Epoch: [130][150/196]	Time 0.110 (0.113)	Data 0.000 (0.002)	Loss 0.1365 (0.1225)	Prec@1 95.703 (96.257)
+Test: [0/79]	Time 0.214 (0.214)	Loss 0.3099 (0.3099)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.015 (0.025)	Loss 0.3462 (0.3250)	Prec@1 91.406 (89.859)
+ * Prec@1 89.880
+current lr 2.67035e-03
+Epoch: [131][0/196]	Time 0.342 (0.342)	Data 0.241 (0.241)	Loss 0.1495 (0.1495)	Prec@1 95.703 (95.703)
+Epoch: [131][50/196]	Time 0.111 (0.111)	Data 0.000 (0.005)	Loss 0.0820 (0.1225)	Prec@1 98.047 (96.201)
+Epoch: [131][100/196]	Time 0.113 (0.111)	Data 0.001 (0.003)	Loss 0.1094 (0.1147)	Prec@1 97.266 (96.450)
+Epoch: [131][150/196]	Time 0.111 (0.111)	Data 0.000 (0.002)	Loss 0.0835 (0.1151)	Prec@1 97.656 (96.422)
+Test: [0/79]	Time 0.229 (0.229)	Loss 0.2906 (0.2906)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.019 (0.026)	Loss 0.4029 (0.3642)	Prec@1 87.500 (89.093)
+ * Prec@1 89.150
+current lr 2.60123e-03
+Epoch: [132][0/196]	Time 0.371 (0.371)	Data 0.253 (0.253)	Loss 0.1432 (0.1432)	Prec@1 94.531 (94.531)
+Epoch: [132][50/196]	Time 0.109 (0.108)	Data 0.000 (0.005)	Loss 0.1525 (0.1273)	Prec@1 95.312 (96.078)
+Epoch: [132][100/196]	Time 0.116 (0.110)	Data 0.000 (0.003)	Loss 0.1736 (0.1238)	Prec@1 94.141 (96.040)
+Epoch: [132][150/196]	Time 0.115 (0.111)	Data 0.000 (0.002)	Loss 0.0929 (0.1225)	Prec@1 97.656 (96.140)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.3233 (0.3233)	Prec@1 89.844 (89.844)
+Test: [50/79]	Time 0.023 (0.026)	Loss 0.4042 (0.3316)	Prec@1 85.938 (89.767)
+ * Prec@1 89.850
+current lr 2.53271e-03
+Epoch: [133][0/196]	Time 0.404 (0.404)	Data 0.279 (0.279)	Loss 0.0738 (0.0738)	Prec@1 97.656 (97.656)
+Epoch: [133][50/196]	Time 0.102 (0.116)	Data 0.000 (0.006)	Loss 0.0888 (0.1085)	Prec@1 97.656 (96.630)
+Epoch: [133][100/196]	Time 0.113 (0.110)	Data 0.000 (0.003)	Loss 0.1053 (0.1053)	Prec@1 96.094 (96.798)
+Epoch: [133][150/196]	Time 0.110 (0.111)	Data 0.000 (0.002)	Loss 0.1828 (0.1092)	Prec@1 94.141 (96.645)
+Test: [0/79]	Time 0.226 (0.226)	Loss 0.1876 (0.1876)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.017 (0.026)	Loss 0.3943 (0.3564)	Prec@1 89.062 (89.752)
+ * Prec@1 89.740
+current lr 2.46479e-03
+Epoch: [134][0/196]	Time 0.354 (0.354)	Data 0.243 (0.243)	Loss 0.0902 (0.0902)	Prec@1 97.656 (97.656)
+Epoch: [134][50/196]	Time 0.116 (0.117)	Data 0.000 (0.005)	Loss 0.1683 (0.1068)	Prec@1 94.531 (96.752)
+Epoch: [134][100/196]	Time 0.074 (0.109)	Data 0.000 (0.003)	Loss 0.0925 (0.1073)	Prec@1 96.875 (96.720)
+Epoch: [134][150/196]	Time 0.116 (0.110)	Data 0.000 (0.002)	Loss 0.1137 (0.1079)	Prec@1 96.484 (96.728)
+Test: [0/79]	Time 0.223 (0.223)	Loss 0.2288 (0.2288)	Prec@1 92.188 (92.188)
+Test: [50/79]	Time 0.024 (0.027)	Loss 0.3142 (0.3357)	Prec@1 89.844 (90.150)
+ * Prec@1 90.330
+current lr 2.39751e-03
+Epoch: [135][0/196]	Time 0.362 (0.362)	Data 0.247 (0.247)	Loss 0.0701 (0.0701)	Prec@1 98.828 (98.828)
+Epoch: [135][50/196]	Time 0.127 (0.117)	Data 0.000 (0.005)	Loss 0.1378 (0.1000)	Prec@1 94.922 (97.082)
+Epoch: [135][100/196]	Time 0.145 (0.124)	Data 0.000 (0.003)	Loss 0.1495 (0.1045)	Prec@1 95.312 (96.829)
+Epoch: [135][150/196]	Time 0.145 (0.129)	Data 0.000 (0.002)	Loss 0.1197 (0.1048)	Prec@1 95.312 (96.867)
+Test: [0/79]	Time 0.214 (0.214)	Loss 0.2895 (0.2895)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.030 (0.034)	Loss 0.3676 (0.3726)	Prec@1 91.406 (88.894)
+ * Prec@1 89.060
+current lr 2.33087e-03
+Epoch: [136][0/196]	Time 0.404 (0.404)	Data 0.257 (0.257)	Loss 0.0860 (0.0860)	Prec@1 98.047 (98.047)
+Epoch: [136][50/196]	Time 0.143 (0.151)	Data 0.000 (0.005)	Loss 0.1551 (0.1182)	Prec@1 95.703 (96.347)
+Epoch: [136][100/196]	Time 0.113 (0.140)	Data 0.000 (0.003)	Loss 0.0575 (0.1114)	Prec@1 98.828 (96.651)
+Epoch: [136][150/196]	Time 0.132 (0.136)	Data 0.000 (0.002)	Loss 0.0927 (0.1120)	Prec@1 96.094 (96.578)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.3946 (0.3946)	Prec@1 88.281 (88.281)
+Test: [50/79]	Time 0.032 (0.034)	Loss 0.4553 (0.3773)	Prec@1 87.500 (88.373)
+ * Prec@1 88.600
+current lr 2.26489e-03
+Epoch: [137][0/196]	Time 0.498 (0.498)	Data 0.345 (0.345)	Loss 0.0913 (0.0913)	Prec@1 98.438 (98.438)
+Epoch: [137][50/196]	Time 0.146 (0.153)	Data 0.000 (0.007)	Loss 0.0848 (0.1019)	Prec@1 96.484 (96.852)
+Epoch: [137][100/196]	Time 0.144 (0.150)	Data 0.000 (0.004)	Loss 0.0835 (0.1012)	Prec@1 98.047 (96.875)
+Epoch: [137][150/196]	Time 0.144 (0.146)	Data 0.000 (0.003)	Loss 0.0941 (0.1016)	Prec@1 97.656 (96.942)
+Test: [0/79]	Time 0.205 (0.205)	Loss 0.3062 (0.3062)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.032 (0.034)	Loss 0.3729 (0.3195)	Prec@1 86.719 (90.349)
+ * Prec@1 90.560
+current lr 2.19958e-03
+Epoch: [138][0/196]	Time 0.394 (0.394)	Data 0.243 (0.243)	Loss 0.0959 (0.0959)	Prec@1 96.875 (96.875)
+Epoch: [138][50/196]	Time 0.145 (0.151)	Data 0.000 (0.005)	Loss 0.0932 (0.0919)	Prec@1 97.266 (97.189)
+Epoch: [138][100/196]	Time 0.144 (0.149)	Data 0.000 (0.003)	Loss 0.1176 (0.0956)	Prec@1 96.484 (97.134)
+Epoch: [138][150/196]	Time 0.138 (0.148)	Data 0.000 (0.002)	Loss 0.0730 (0.0955)	Prec@1 99.219 (97.141)
+Test: [0/79]	Time 0.218 (0.218)	Loss 0.2717 (0.2717)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.029 (0.031)	Loss 0.3529 (0.3290)	Prec@1 87.500 (90.074)
+ * Prec@1 90.230
+current lr 2.13497e-03
+Epoch: [139][0/196]	Time 0.384 (0.384)	Data 0.244 (0.244)	Loss 0.0698 (0.0698)	Prec@1 97.266 (97.266)
+Epoch: [139][50/196]	Time 0.145 (0.149)	Data 0.000 (0.005)	Loss 0.0985 (0.0970)	Prec@1 97.656 (97.036)
+Epoch: [139][100/196]	Time 0.151 (0.148)	Data 0.000 (0.003)	Loss 0.0675 (0.0941)	Prec@1 98.438 (97.150)
+Epoch: [139][150/196]	Time 0.145 (0.148)	Data 0.000 (0.002)	Loss 0.1254 (0.0944)	Prec@1 94.922 (97.152)
+Test: [0/79]	Time 0.218 (0.218)	Loss 0.3634 (0.3634)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.042 (0.040)	Loss 0.3760 (0.3575)	Prec@1 87.500 (89.798)
+ * Prec@1 90.030
+current lr 2.07107e-03
+Epoch: [140][0/196]	Time 0.445 (0.445)	Data 0.265 (0.265)	Loss 0.0753 (0.0753)	Prec@1 98.438 (98.438)
+Epoch: [140][50/196]	Time 0.181 (0.180)	Data 0.000 (0.005)	Loss 0.0570 (0.0960)	Prec@1 99.219 (97.158)
+Epoch: [140][100/196]	Time 0.182 (0.181)	Data 0.000 (0.003)	Loss 0.0893 (0.0943)	Prec@1 98.438 (97.235)
+Epoch: [140][150/196]	Time 0.180 (0.181)	Data 0.000 (0.002)	Loss 0.0971 (0.0974)	Prec@1 98.047 (97.116)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.2910 (0.2910)	Prec@1 89.062 (89.062)
+Test: [50/79]	Time 0.030 (0.036)	Loss 0.3703 (0.3633)	Prec@1 89.062 (89.308)
+ * Prec@1 89.260
+current lr 2.00790e-03
+Epoch: [141][0/196]	Time 0.382 (0.382)	Data 0.237 (0.237)	Loss 0.1009 (0.1009)	Prec@1 96.875 (96.875)
+Epoch: [141][50/196]	Time 0.176 (0.183)	Data 0.001 (0.005)	Loss 0.0733 (0.0912)	Prec@1 98.047 (97.335)
+Epoch: [141][100/196]	Time 0.191 (0.181)	Data 0.000 (0.003)	Loss 0.0862 (0.0920)	Prec@1 97.656 (97.269)
+Epoch: [141][150/196]	Time 0.181 (0.181)	Data 0.000 (0.002)	Loss 0.1034 (0.0946)	Prec@1 96.875 (97.198)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.3927 (0.3927)	Prec@1 87.500 (87.500)
+Test: [50/79]	Time 0.029 (0.039)	Loss 0.4104 (0.3582)	Prec@1 86.719 (89.154)
+ * Prec@1 89.300
+current lr 1.94546e-03
+Epoch: [142][0/196]	Time 0.410 (0.410)	Data 0.245 (0.245)	Loss 0.0914 (0.0914)	Prec@1 97.266 (97.266)
+Epoch: [142][50/196]	Time 0.181 (0.184)	Data 0.000 (0.005)	Loss 0.0821 (0.0850)	Prec@1 97.656 (97.373)
+Epoch: [142][100/196]	Time 0.176 (0.180)	Data 0.000 (0.003)	Loss 0.1093 (0.0844)	Prec@1 96.484 (97.440)
+Epoch: [142][150/196]	Time 0.184 (0.181)	Data 0.000 (0.002)	Loss 0.0969 (0.0874)	Prec@1 97.656 (97.351)
+Test: [0/79]	Time 0.213 (0.213)	Loss 0.2112 (0.2112)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.038 (0.042)	Loss 0.2929 (0.3085)	Prec@1 90.625 (91.284)
+ * Prec@1 91.230
+current lr 1.88379e-03
+Epoch: [143][0/196]	Time 0.422 (0.422)	Data 0.246 (0.246)	Loss 0.1007 (0.1007)	Prec@1 96.094 (96.094)
+Epoch: [143][50/196]	Time 0.182 (0.179)	Data 0.000 (0.005)	Loss 0.0630 (0.0768)	Prec@1 98.438 (97.779)
+Epoch: [143][100/196]	Time 0.181 (0.180)	Data 0.000 (0.003)	Loss 0.0531 (0.0768)	Prec@1 98.047 (97.823)
+Epoch: [143][150/196]	Time 0.179 (0.179)	Data 0.000 (0.002)	Loss 0.0777 (0.0786)	Prec@1 98.047 (97.755)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.3486 (0.3486)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.035 (0.042)	Loss 0.4512 (0.3864)	Prec@1 89.062 (88.618)
+ * Prec@1 88.640
+current lr 1.82288e-03
+Epoch: [144][0/196]	Time 0.418 (0.418)	Data 0.241 (0.241)	Loss 0.0806 (0.0806)	Prec@1 97.656 (97.656)
+Epoch: [144][50/196]	Time 0.167 (0.180)	Data 0.000 (0.005)	Loss 0.0888 (0.0838)	Prec@1 96.484 (97.449)
+Epoch: [144][100/196]	Time 0.180 (0.181)	Data 0.000 (0.003)	Loss 0.0835 (0.0873)	Prec@1 96.875 (97.370)
+Epoch: [144][150/196]	Time 0.161 (0.179)	Data 0.000 (0.002)	Loss 0.0750 (0.0858)	Prec@1 97.656 (97.413)
+Test: [0/79]	Time 0.219 (0.219)	Loss 0.3126 (0.3126)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.038 (0.043)	Loss 0.3743 (0.3222)	Prec@1 89.062 (90.901)
+ * Prec@1 90.590
+current lr 1.76276e-03
+Epoch: [145][0/196]	Time 0.417 (0.417)	Data 0.245 (0.245)	Loss 0.0724 (0.0724)	Prec@1 98.828 (98.828)
+Epoch: [145][50/196]	Time 0.185 (0.187)	Data 0.000 (0.005)	Loss 0.0587 (0.0847)	Prec@1 97.656 (97.511)
+Epoch: [145][100/196]	Time 0.182 (0.180)	Data 0.000 (0.003)	Loss 0.0698 (0.0834)	Prec@1 96.875 (97.544)
+Epoch: [145][150/196]	Time 0.180 (0.179)	Data 0.000 (0.002)	Loss 0.1270 (0.0831)	Prec@1 96.875 (97.548)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.3567 (0.3567)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.041 (0.042)	Loss 0.2413 (0.3259)	Prec@1 92.188 (90.472)
+ * Prec@1 90.640
+current lr 1.70344e-03
+Epoch: [146][0/196]	Time 0.423 (0.423)	Data 0.241 (0.241)	Loss 0.0825 (0.0825)	Prec@1 97.656 (97.656)
+Epoch: [146][50/196]	Time 0.182 (0.187)	Data 0.000 (0.005)	Loss 0.0835 (0.0772)	Prec@1 97.656 (97.695)
+Epoch: [146][100/196]	Time 0.179 (0.181)	Data 0.000 (0.003)	Loss 0.0408 (0.0745)	Prec@1 99.609 (97.877)
+Epoch: [146][150/196]	Time 0.180 (0.180)	Data 0.000 (0.002)	Loss 0.1214 (0.0767)	Prec@1 96.484 (97.801)
+Test: [0/79]	Time 0.214 (0.214)	Loss 0.2349 (0.2349)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.037 (0.041)	Loss 0.3162 (0.3265)	Prec@1 92.188 (90.518)
+ * Prec@1 90.660
+current lr 1.64494e-03
+Epoch: [147][0/196]	Time 0.398 (0.398)	Data 0.232 (0.232)	Loss 0.0735 (0.0735)	Prec@1 97.656 (97.656)
+Epoch: [147][50/196]	Time 0.185 (0.183)	Data 0.000 (0.005)	Loss 0.1287 (0.0768)	Prec@1 96.484 (97.878)
+Epoch: [147][100/196]	Time 0.161 (0.180)	Data 0.000 (0.003)	Loss 0.0528 (0.0736)	Prec@1 98.828 (97.985)
+Epoch: [147][150/196]	Time 0.181 (0.178)	Data 0.000 (0.002)	Loss 0.0449 (0.0757)	Prec@1 99.609 (97.928)
+Test: [0/79]	Time 0.214 (0.214)	Loss 0.2234 (0.2234)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.042 (0.043)	Loss 0.3630 (0.3456)	Prec@1 91.406 (90.564)
+ * Prec@1 90.580
+current lr 1.58726e-03
+Epoch: [148][0/196]	Time 0.429 (0.429)	Data 0.248 (0.248)	Loss 0.0478 (0.0478)	Prec@1 98.438 (98.438)
+Epoch: [148][50/196]	Time 0.183 (0.180)	Data 0.000 (0.005)	Loss 0.0858 (0.0753)	Prec@1 96.484 (97.779)
+Epoch: [148][100/196]	Time 0.177 (0.178)	Data 0.000 (0.003)	Loss 0.0710 (0.0718)	Prec@1 98.047 (97.919)
+Epoch: [148][150/196]	Time 0.179 (0.177)	Data 0.000 (0.002)	Loss 0.0876 (0.0738)	Prec@1 98.047 (97.907)
+Test: [0/79]	Time 0.217 (0.217)	Loss 0.2807 (0.2807)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.041 (0.043)	Loss 0.2562 (0.2977)	Prec@1 92.969 (91.161)
+ * Prec@1 91.260
+current lr 1.53044e-03
+Epoch: [149][0/196]	Time 0.410 (0.410)	Data 0.232 (0.232)	Loss 0.0620 (0.0620)	Prec@1 98.438 (98.438)
+Epoch: [149][50/196]	Time 0.183 (0.185)	Data 0.000 (0.005)	Loss 0.0571 (0.0760)	Prec@1 98.438 (97.878)
+Epoch: [149][100/196]	Time 0.176 (0.177)	Data 0.000 (0.003)	Loss 0.0572 (0.0705)	Prec@1 98.828 (98.020)
+Epoch: [149][150/196]	Time 0.167 (0.177)	Data 0.000 (0.002)	Loss 0.0763 (0.0695)	Prec@1 98.438 (98.024)
+Test: [0/79]	Time 0.216 (0.216)	Loss 0.2969 (0.2969)	Prec@1 90.625 (90.625)
+Test: [50/79]	Time 0.040 (0.042)	Loss 0.3272 (0.3259)	Prec@1 88.281 (90.518)
+ * Prec@1 90.560
+current lr 1.47447e-03
+Epoch: [150][0/196]	Time 0.419 (0.419)	Data 0.239 (0.239)	Loss 0.0804 (0.0804)	Prec@1 97.266 (97.266)
+Epoch: [150][50/196]	Time 0.167 (0.184)	Data 0.000 (0.005)	Loss 0.0452 (0.0680)	Prec@1 98.828 (98.055)
+Epoch: [150][100/196]	Time 0.174 (0.179)	Data 0.000 (0.003)	Loss 0.0853 (0.0634)	Prec@1 96.484 (98.248)
+Epoch: [150][150/196]	Time 0.185 (0.179)	Data 0.000 (0.002)	Loss 0.1086 (0.0648)	Prec@1 96.484 (98.187)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.2611 (0.2611)	Prec@1 92.188 (92.188)
+Test: [50/79]	Time 0.038 (0.042)	Loss 0.3344 (0.3086)	Prec@1 91.406 (91.330)
+ * Prec@1 91.240
+current lr 1.41937e-03
+Epoch: [151][0/196]	Time 0.411 (0.411)	Data 0.239 (0.239)	Loss 0.1029 (0.1029)	Prec@1 97.266 (97.266)
+Epoch: [151][50/196]	Time 0.182 (0.180)	Data 0.000 (0.005)	Loss 0.0431 (0.0634)	Prec@1 98.828 (98.261)
+Epoch: [151][100/196]	Time 0.181 (0.181)	Data 0.001 (0.003)	Loss 0.0523 (0.0669)	Prec@1 98.828 (98.144)
+Epoch: [151][150/196]	Time 0.180 (0.179)	Data 0.000 (0.002)	Loss 0.0966 (0.0660)	Prec@1 97.656 (98.184)
+Test: [0/79]	Time 0.252 (0.252)	Loss 0.3243 (0.3243)	Prec@1 91.406 (91.406)
+Test: [50/79]	Time 0.033 (0.043)	Loss 0.3310 (0.3095)	Prec@1 90.625 (91.284)
+ * Prec@1 91.290
+current lr 1.36516e-03
+Epoch: [152][0/196]	Time 0.427 (0.427)	Data 0.250 (0.250)	Loss 0.0694 (0.0694)	Prec@1 98.047 (98.047)
+Epoch: [152][50/196]	Time 0.176 (0.181)	Data 0.000 (0.005)	Loss 0.0534 (0.0586)	Prec@1 98.438 (98.361)
+Epoch: [152][100/196]	Time 0.180 (0.181)	Data 0.000 (0.003)	Loss 0.0661 (0.0592)	Prec@1 98.438 (98.337)
+Epoch: [152][150/196]	Time 0.164 (0.181)	Data 0.000 (0.002)	Loss 0.0845 (0.0612)	Prec@1 97.266 (98.324)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.3053 (0.3053)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.036 (0.039)	Loss 0.2700 (0.2865)	Prec@1 89.062 (91.789)
+ * Prec@1 91.860
+current lr 1.31184e-03
+Epoch: [153][0/196]	Time 0.385 (0.385)	Data 0.255 (0.255)	Loss 0.0433 (0.0433)	Prec@1 98.828 (98.828)
+Epoch: [153][50/196]	Time 0.190 (0.181)	Data 0.001 (0.005)	Loss 0.0672 (0.0644)	Prec@1 98.047 (98.177)
+Epoch: [153][100/196]	Time 0.180 (0.182)	Data 0.000 (0.003)	Loss 0.0749 (0.0624)	Prec@1 97.656 (98.233)
+Epoch: [153][150/196]	Time 0.181 (0.182)	Data 0.000 (0.002)	Loss 0.0725 (0.0604)	Prec@1 97.656 (98.303)
+Test: [0/79]	Time 0.219 (0.219)	Loss 0.2070 (0.2070)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.036 (0.036)	Loss 0.4031 (0.3209)	Prec@1 85.938 (91.023)
+ * Prec@1 91.170
+current lr 1.25944e-03
+Epoch: [154][0/196]	Time 0.399 (0.399)	Data 0.275 (0.275)	Loss 0.0938 (0.0938)	Prec@1 97.656 (97.656)
+Epoch: [154][50/196]	Time 0.186 (0.180)	Data 0.000 (0.006)	Loss 0.0755 (0.0579)	Prec@1 98.047 (98.323)
+Epoch: [154][100/196]	Time 0.181 (0.181)	Data 0.000 (0.003)	Loss 0.0322 (0.0562)	Prec@1 99.219 (98.414)
+Epoch: [154][150/196]	Time 0.176 (0.181)	Data 0.000 (0.002)	Loss 0.0740 (0.0548)	Prec@1 97.266 (98.466)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.2632 (0.2632)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.041 (0.040)	Loss 0.3628 (0.3013)	Prec@1 89.844 (91.468)
+ * Prec@1 91.530
+current lr 1.20797e-03
+Epoch: [155][0/196]	Time 0.396 (0.396)	Data 0.232 (0.232)	Loss 0.0314 (0.0314)	Prec@1 99.219 (99.219)
+Epoch: [155][50/196]	Time 0.182 (0.173)	Data 0.000 (0.005)	Loss 0.0295 (0.0511)	Prec@1 99.609 (98.690)
+Epoch: [155][100/196]	Time 0.191 (0.178)	Data 0.000 (0.003)	Loss 0.0503 (0.0524)	Prec@1 99.219 (98.642)
+Epoch: [155][150/196]	Time 0.192 (0.179)	Data 0.000 (0.002)	Loss 0.0751 (0.0532)	Prec@1 97.266 (98.637)
+Test: [0/79]	Time 0.207 (0.207)	Loss 0.2286 (0.2286)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.042 (0.042)	Loss 0.3210 (0.2954)	Prec@1 92.969 (91.743)
+ * Prec@1 91.720
+current lr 1.15743e-03
+Epoch: [156][0/196]	Time 0.415 (0.415)	Data 0.240 (0.240)	Loss 0.0523 (0.0523)	Prec@1 98.047 (98.047)
+Epoch: [156][50/196]	Time 0.134 (0.177)	Data 0.000 (0.005)	Loss 0.0627 (0.0647)	Prec@1 98.438 (98.139)
+Epoch: [156][100/196]	Time 0.181 (0.177)	Data 0.000 (0.003)	Loss 0.0575 (0.0608)	Prec@1 98.438 (98.298)
+Epoch: [156][150/196]	Time 0.181 (0.179)	Data 0.000 (0.002)	Loss 0.0538 (0.0579)	Prec@1 98.828 (98.406)
+Test: [0/79]	Time 0.247 (0.247)	Loss 0.1682 (0.1682)	Prec@1 96.875 (96.875)
+Test: [50/79]	Time 0.041 (0.043)	Loss 0.3475 (0.2770)	Prec@1 90.625 (92.172)
+ * Prec@1 92.120
+current lr 1.10785e-03
+Epoch: [157][0/196]	Time 0.413 (0.413)	Data 0.238 (0.238)	Loss 0.0258 (0.0258)	Prec@1 98.828 (98.828)
+Epoch: [157][50/196]	Time 0.182 (0.189)	Data 0.000 (0.005)	Loss 0.0329 (0.0437)	Prec@1 99.219 (98.912)
+Epoch: [157][100/196]	Time 0.181 (0.179)	Data 0.000 (0.003)	Loss 0.0272 (0.0450)	Prec@1 99.609 (98.878)
+Epoch: [157][150/196]	Time 0.172 (0.179)	Data 0.000 (0.002)	Loss 0.0330 (0.0443)	Prec@1 99.219 (98.895)
+Test: [0/79]	Time 0.213 (0.213)	Loss 0.2485 (0.2485)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.041 (0.042)	Loss 0.1907 (0.2933)	Prec@1 92.969 (91.881)
+ * Prec@1 91.830
+current lr 1.05922e-03
+Epoch: [158][0/196]	Time 0.420 (0.420)	Data 0.238 (0.238)	Loss 0.0737 (0.0737)	Prec@1 98.047 (98.047)
+Epoch: [158][50/196]	Time 0.180 (0.187)	Data 0.000 (0.005)	Loss 0.0697 (0.0434)	Prec@1 98.047 (98.920)
+Epoch: [158][100/196]	Time 0.132 (0.180)	Data 0.000 (0.003)	Loss 0.0392 (0.0466)	Prec@1 98.828 (98.797)
+Epoch: [158][150/196]	Time 0.180 (0.177)	Data 0.000 (0.002)	Loss 0.0753 (0.0490)	Prec@1 97.266 (98.748)
+Test: [0/79]	Time 0.209 (0.209)	Loss 0.1387 (0.1387)	Prec@1 96.875 (96.875)
+Test: [50/79]	Time 0.032 (0.042)	Loss 0.3508 (0.2728)	Prec@1 91.406 (92.126)
+ * Prec@1 92.300
+current lr 1.01158e-03
+Epoch: [159][0/196]	Time 0.420 (0.420)	Data 0.232 (0.232)	Loss 0.0232 (0.0232)	Prec@1 99.609 (99.609)
+Epoch: [159][50/196]	Time 0.188 (0.186)	Data 0.000 (0.005)	Loss 0.0210 (0.0470)	Prec@1 99.609 (98.843)
+Epoch: [159][100/196]	Time 0.146 (0.184)	Data 0.000 (0.003)	Loss 0.0582 (0.0466)	Prec@1 98.438 (98.840)
+Epoch: [159][150/196]	Time 0.176 (0.177)	Data 0.000 (0.002)	Loss 0.0369 (0.0446)	Prec@1 99.609 (98.893)
+Test: [0/79]	Time 0.217 (0.217)	Loss 0.2091 (0.2091)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.035 (0.042)	Loss 0.3124 (0.2887)	Prec@1 89.844 (91.973)
+ * Prec@1 91.940
+current lr 9.64915e-04
+Epoch: [160][0/196]	Time 0.447 (0.447)	Data 0.272 (0.272)	Loss 0.0295 (0.0295)	Prec@1 99.219 (99.219)
+Epoch: [160][50/196]	Time 0.184 (0.188)	Data 0.000 (0.006)	Loss 0.0607 (0.0388)	Prec@1 98.438 (99.096)
+Epoch: [160][100/196]	Time 0.168 (0.183)	Data 0.000 (0.003)	Loss 0.0388 (0.0380)	Prec@1 99.219 (99.138)
+Epoch: [160][150/196]	Time 0.181 (0.179)	Data 0.000 (0.002)	Loss 0.0240 (0.0407)	Prec@1 99.219 (99.020)
+Test: [0/79]	Time 0.209 (0.209)	Loss 0.2201 (0.2201)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.041 (0.042)	Loss 0.2352 (0.2732)	Prec@1 91.406 (92.264)
+ * Prec@1 92.380
+current lr 9.19251e-04
+Epoch: [161][0/196]	Time 0.408 (0.408)	Data 0.232 (0.232)	Loss 0.0353 (0.0353)	Prec@1 99.219 (99.219)
+Epoch: [161][50/196]	Time 0.180 (0.185)	Data 0.000 (0.005)	Loss 0.0528 (0.0368)	Prec@1 98.047 (99.180)
+Epoch: [161][100/196]	Time 0.177 (0.180)	Data 0.000 (0.003)	Loss 0.0198 (0.0362)	Prec@1 99.609 (99.196)
+Epoch: [161][150/196]	Time 0.166 (0.180)	Data 0.000 (0.002)	Loss 0.0496 (0.0371)	Prec@1 98.828 (99.144)
+Test: [0/79]	Time 0.215 (0.215)	Loss 0.1249 (0.1249)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.036 (0.040)	Loss 0.2848 (0.2822)	Prec@1 91.406 (92.264)
+ * Prec@1 92.280
+current lr 8.74597e-04
+Epoch: [162][0/196]	Time 0.416 (0.416)	Data 0.241 (0.241)	Loss 0.0356 (0.0356)	Prec@1 99.219 (99.219)
+Epoch: [162][50/196]	Time 0.180 (0.187)	Data 0.000 (0.005)	Loss 0.0269 (0.0360)	Prec@1 99.609 (99.219)
+Epoch: [162][100/196]	Time 0.182 (0.181)	Data 0.000 (0.003)	Loss 0.0216 (0.0355)	Prec@1 99.609 (99.223)
+Epoch: [162][150/196]	Time 0.179 (0.181)	Data 0.000 (0.002)	Loss 0.0475 (0.0363)	Prec@1 98.828 (99.175)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.2447 (0.2447)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.041 (0.043)	Loss 0.3303 (0.2670)	Prec@1 90.625 (92.494)
+ * Prec@1 92.580
+current lr 8.30963e-04
+Epoch: [163][0/196]	Time 0.407 (0.407)	Data 0.231 (0.231)	Loss 0.0293 (0.0293)	Prec@1 99.219 (99.219)
+Epoch: [163][50/196]	Time 0.178 (0.176)	Data 0.000 (0.005)	Loss 0.0340 (0.0347)	Prec@1 98.438 (99.134)
+Epoch: [163][100/196]	Time 0.186 (0.178)	Data 0.000 (0.003)	Loss 0.0607 (0.0343)	Prec@1 98.438 (99.226)
+Epoch: [163][150/196]	Time 0.181 (0.179)	Data 0.000 (0.002)	Loss 0.0393 (0.0351)	Prec@1 98.828 (99.175)
+Test: [0/79]	Time 0.208 (0.208)	Loss 0.1747 (0.1747)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.036 (0.040)	Loss 0.2852 (0.2606)	Prec@1 92.188 (92.923)
+ * Prec@1 92.940
+current lr 7.88360e-04
+Epoch: [164][0/196]	Time 0.442 (0.442)	Data 0.252 (0.252)	Loss 0.0593 (0.0593)	Prec@1 98.438 (98.438)
+Epoch: [164][50/196]	Time 0.171 (0.177)	Data 0.000 (0.005)	Loss 0.0246 (0.0331)	Prec@1 99.609 (99.234)
+Epoch: [164][100/196]	Time 0.193 (0.178)	Data 0.000 (0.003)	Loss 0.0151 (0.0349)	Prec@1 100.000 (99.199)
+Epoch: [164][150/196]	Time 0.181 (0.179)	Data 0.000 (0.002)	Loss 0.0632 (0.0341)	Prec@1 98.438 (99.219)
+Test: [0/79]	Time 0.203 (0.203)	Loss 0.1905 (0.1905)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.038 (0.040)	Loss 0.2887 (0.2706)	Prec@1 92.969 (92.525)
+ * Prec@1 92.610
+current lr 7.46799e-04
+Epoch: [165][0/196]	Time 0.396 (0.396)	Data 0.231 (0.231)	Loss 0.0227 (0.0227)	Prec@1 99.609 (99.609)
+Epoch: [165][50/196]	Time 0.180 (0.178)	Data 0.000 (0.005)	Loss 0.0198 (0.0315)	Prec@1 100.000 (99.326)
+Epoch: [165][100/196]	Time 0.182 (0.177)	Data 0.000 (0.003)	Loss 0.0379 (0.0302)	Prec@1 98.828 (99.397)
+Epoch: [165][150/196]	Time 0.186 (0.179)	Data 0.000 (0.002)	Loss 0.0198 (0.0292)	Prec@1 100.000 (99.436)
+Test: [0/79]	Time 0.213 (0.213)	Loss 0.2123 (0.2123)	Prec@1 93.750 (93.750)
+Test: [50/79]	Time 0.024 (0.042)	Loss 0.2875 (0.2716)	Prec@1 91.406 (92.402)
+ * Prec@1 92.450
+current lr 7.06290e-04
+Epoch: [166][0/196]	Time 0.401 (0.401)	Data 0.232 (0.232)	Loss 0.0272 (0.0272)	Prec@1 99.219 (99.219)
+Epoch: [166][50/196]	Time 0.177 (0.177)	Data 0.000 (0.005)	Loss 0.0225 (0.0287)	Prec@1 100.000 (99.472)
+Epoch: [166][100/196]	Time 0.148 (0.179)	Data 0.000 (0.003)	Loss 0.0227 (0.0281)	Prec@1 99.609 (99.489)
+Epoch: [166][150/196]	Time 0.181 (0.178)	Data 0.000 (0.002)	Loss 0.0235 (0.0274)	Prec@1 99.609 (99.477)
+Test: [0/79]	Time 0.227 (0.227)	Loss 0.1735 (0.1735)	Prec@1 96.875 (96.875)
+Test: [50/79]	Time 0.037 (0.040)	Loss 0.2703 (0.2686)	Prec@1 92.969 (92.708)
+ * Prec@1 92.850
+current lr 6.66842e-04
+Epoch: [167][0/196]	Time 0.418 (0.418)	Data 0.246 (0.246)	Loss 0.0486 (0.0486)	Prec@1 98.438 (98.438)
+Epoch: [167][50/196]	Time 0.181 (0.179)	Data 0.000 (0.005)	Loss 0.0207 (0.0274)	Prec@1 100.000 (99.502)
+Epoch: [167][100/196]	Time 0.182 (0.180)	Data 0.000 (0.003)	Loss 0.0266 (0.0284)	Prec@1 100.000 (99.443)
+Epoch: [167][150/196]	Time 0.170 (0.179)	Data 0.000 (0.002)	Loss 0.0456 (0.0275)	Prec@1 98.828 (99.472)
+Test: [0/79]	Time 0.213 (0.213)	Loss 0.2166 (0.2166)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.040 (0.042)	Loss 0.1929 (0.2550)	Prec@1 95.312 (93.091)
+ * Prec@1 93.010
+current lr 6.28467e-04
+Epoch: [168][0/196]	Time 0.406 (0.406)	Data 0.233 (0.233)	Loss 0.0158 (0.0158)	Prec@1 100.000 (100.000)
+Epoch: [168][50/196]	Time 0.171 (0.184)	Data 0.000 (0.005)	Loss 0.0531 (0.0270)	Prec@1 98.828 (99.464)
+Epoch: [168][100/196]	Time 0.182 (0.180)	Data 0.000 (0.003)	Loss 0.0279 (0.0263)	Prec@1 99.609 (99.489)
+Epoch: [168][150/196]	Time 0.179 (0.181)	Data 0.000 (0.002)	Loss 0.0265 (0.0250)	Prec@1 99.219 (99.545)
+Test: [0/79]	Time 0.235 (0.235)	Loss 0.2374 (0.2374)	Prec@1 92.969 (92.969)
+Test: [50/79]	Time 0.041 (0.043)	Loss 0.2221 (0.2595)	Prec@1 93.750 (93.030)
+ * Prec@1 93.180
+current lr 5.91172e-04
+Epoch: [169][0/196]	Time 0.406 (0.406)	Data 0.228 (0.228)	Loss 0.0449 (0.0449)	Prec@1 99.219 (99.219)
+Epoch: [169][50/196]	Time 0.180 (0.186)	Data 0.000 (0.005)	Loss 0.0219 (0.0232)	Prec@1 99.609 (99.563)
+Epoch: [169][100/196]	Time 0.180 (0.180)	Data 0.000 (0.003)	Loss 0.0338 (0.0233)	Prec@1 98.828 (99.590)
+Epoch: [169][150/196]	Time 0.167 (0.180)	Data 0.000 (0.002)	Loss 0.0424 (0.0238)	Prec@1 98.828 (99.581)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.1918 (0.1918)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.038 (0.039)	Loss 0.2250 (0.2530)	Prec@1 94.531 (93.153)
+ * Prec@1 93.260
+current lr 5.54967e-04
+Epoch: [170][0/196]	Time 0.410 (0.410)	Data 0.247 (0.247)	Loss 0.0155 (0.0155)	Prec@1 99.609 (99.609)
+Epoch: [170][50/196]	Time 0.184 (0.187)	Data 0.000 (0.005)	Loss 0.0153 (0.0223)	Prec@1 100.000 (99.663)
+Epoch: [170][100/196]	Time 0.170 (0.181)	Data 0.000 (0.003)	Loss 0.0151 (0.0226)	Prec@1 100.000 (99.633)
+Epoch: [170][150/196]	Time 0.189 (0.179)	Data 0.000 (0.002)	Loss 0.0263 (0.0227)	Prec@1 99.609 (99.630)
+Test: [0/79]	Time 0.211 (0.211)	Loss 0.2116 (0.2116)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.042 (0.042)	Loss 0.2972 (0.2469)	Prec@1 91.406 (93.352)
+ * Prec@1 93.520
+current lr 5.19862e-04
+Epoch: [171][0/196]	Time 0.408 (0.408)	Data 0.234 (0.234)	Loss 0.0263 (0.0263)	Prec@1 99.219 (99.219)
+Epoch: [171][50/196]	Time 0.178 (0.179)	Data 0.000 (0.005)	Loss 0.0232 (0.0215)	Prec@1 99.609 (99.571)
+Epoch: [171][100/196]	Time 0.178 (0.180)	Data 0.000 (0.003)	Loss 0.0154 (0.0212)	Prec@1 100.000 (99.652)
+Epoch: [171][150/196]	Time 0.179 (0.176)	Data 0.000 (0.002)	Loss 0.0270 (0.0212)	Prec@1 99.609 (99.659)
+Test: [0/79]	Time 0.222 (0.222)	Loss 0.1729 (0.1729)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.035 (0.043)	Loss 0.2768 (0.2627)	Prec@1 93.750 (93.076)
+ * Prec@1 93.180
+current lr 4.85865e-04
+Epoch: [172][0/196]	Time 0.425 (0.425)	Data 0.253 (0.253)	Loss 0.0160 (0.0160)	Prec@1 99.609 (99.609)
+Epoch: [172][50/196]	Time 0.169 (0.184)	Data 0.000 (0.005)	Loss 0.0203 (0.0185)	Prec@1 99.609 (99.801)
+Epoch: [172][100/196]	Time 0.169 (0.180)	Data 0.000 (0.003)	Loss 0.0293 (0.0193)	Prec@1 99.219 (99.737)
+Epoch: [172][150/196]	Time 0.180 (0.177)	Data 0.000 (0.002)	Loss 0.0141 (0.0198)	Prec@1 100.000 (99.710)
+Test: [0/79]	Time 0.204 (0.204)	Loss 0.1504 (0.1504)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.036 (0.042)	Loss 0.2708 (0.2501)	Prec@1 93.750 (93.428)
+ * Prec@1 93.480
+current lr 4.52984e-04
+Epoch: [173][0/196]	Time 0.417 (0.417)	Data 0.241 (0.241)	Loss 0.0298 (0.0298)	Prec@1 99.609 (99.609)
+Epoch: [173][50/196]	Time 0.184 (0.187)	Data 0.000 (0.005)	Loss 0.0120 (0.0192)	Prec@1 100.000 (99.740)
+Epoch: [173][100/196]	Time 0.187 (0.178)	Data 0.000 (0.003)	Loss 0.0317 (0.0200)	Prec@1 99.219 (99.691)
+Epoch: [173][150/196]	Time 0.166 (0.179)	Data 0.000 (0.002)	Loss 0.0351 (0.0200)	Prec@1 98.828 (99.703)
+Test: [0/79]	Time 0.230 (0.230)	Loss 0.2153 (0.2153)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.039 (0.043)	Loss 0.2882 (0.2458)	Prec@1 92.969 (93.505)
+ * Prec@1 93.630
+current lr 4.21227e-04
+Epoch: [174][0/196]	Time 0.398 (0.398)	Data 0.218 (0.218)	Loss 0.0295 (0.0295)	Prec@1 99.219 (99.219)
+Epoch: [174][50/196]	Time 0.180 (0.186)	Data 0.000 (0.005)	Loss 0.0139 (0.0189)	Prec@1 100.000 (99.740)
+Epoch: [174][100/196]	Time 0.179 (0.181)	Data 0.000 (0.002)	Loss 0.0166 (0.0191)	Prec@1 99.609 (99.718)
+Epoch: [174][150/196]	Time 0.183 (0.179)	Data 0.000 (0.002)	Loss 0.0132 (0.0190)	Prec@1 100.000 (99.746)
+Test: [0/79]	Time 0.210 (0.210)	Loss 0.2113 (0.2113)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.041 (0.042)	Loss 0.2819 (0.2516)	Prec@1 93.750 (93.750)
+ * Prec@1 93.520
+current lr 3.90602e-04
+Epoch: [175][0/196]	Time 0.435 (0.435)	Data 0.255 (0.255)	Loss 0.0129 (0.0129)	Prec@1 100.000 (100.000)
+Epoch: [175][50/196]	Time 0.168 (0.185)	Data 0.000 (0.005)	Loss 0.0118 (0.0163)	Prec@1 100.000 (99.824)
+Epoch: [175][100/196]	Time 0.182 (0.181)	Data 0.000 (0.003)	Loss 0.0122 (0.0166)	Prec@1 100.000 (99.814)
+Epoch: [175][150/196]	Time 0.163 (0.180)	Data 0.000 (0.002)	Loss 0.0143 (0.0164)	Prec@1 100.000 (99.811)
+Test: [0/79]	Time 0.242 (0.242)	Loss 0.1729 (0.1729)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.039 (0.040)	Loss 0.3451 (0.2494)	Prec@1 89.844 (93.382)
+ * Prec@1 93.390
+current lr 3.61118e-04
+Epoch: [176][0/196]	Time 0.429 (0.429)	Data 0.255 (0.255)	Loss 0.0188 (0.0188)	Prec@1 99.609 (99.609)
+Epoch: [176][50/196]	Time 0.178 (0.181)	Data 0.000 (0.005)	Loss 0.0131 (0.0154)	Prec@1 100.000 (99.893)
+Epoch: [176][100/196]	Time 0.180 (0.181)	Data 0.000 (0.003)	Loss 0.0089 (0.0160)	Prec@1 100.000 (99.845)
+Epoch: [176][150/196]	Time 0.187 (0.181)	Data 0.000 (0.002)	Loss 0.0115 (0.0163)	Prec@1 100.000 (99.832)
+Test: [0/79]	Time 0.221 (0.221)	Loss 0.2114 (0.2114)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.034 (0.041)	Loss 0.3062 (0.2502)	Prec@1 91.406 (93.490)
+ * Prec@1 93.540
+current lr 3.32780e-04
+Epoch: [177][0/196]	Time 0.440 (0.440)	Data 0.265 (0.265)	Loss 0.0163 (0.0163)	Prec@1 99.609 (99.609)
+Epoch: [177][50/196]	Time 0.191 (0.177)	Data 0.000 (0.006)	Loss 0.0132 (0.0154)	Prec@1 100.000 (99.839)
+Epoch: [177][100/196]	Time 0.179 (0.180)	Data 0.000 (0.003)	Loss 0.0158 (0.0159)	Prec@1 100.000 (99.814)
+Epoch: [177][150/196]	Time 0.182 (0.180)	Data 0.000 (0.002)	Loss 0.0096 (0.0164)	Prec@1 100.000 (99.798)
+Test: [0/79]	Time 0.217 (0.217)	Loss 0.2061 (0.2061)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.035 (0.040)	Loss 0.2978 (0.2481)	Prec@1 91.406 (93.566)
+ * Prec@1 93.620
+current lr 3.05596e-04
+Epoch: [178][0/196]	Time 0.459 (0.459)	Data 0.312 (0.312)	Loss 0.0120 (0.0120)	Prec@1 100.000 (100.000)
+Epoch: [178][50/196]	Time 0.180 (0.172)	Data 0.000 (0.006)	Loss 0.0147 (0.0159)	Prec@1 100.000 (99.786)
+Epoch: [178][100/196]	Time 0.178 (0.177)	Data 0.001 (0.003)	Loss 0.0167 (0.0167)	Prec@1 99.609 (99.768)
+Epoch: [178][150/196]	Time 0.180 (0.178)	Data 0.000 (0.002)	Loss 0.0106 (0.0163)	Prec@1 100.000 (99.793)
+Test: [0/79]	Time 0.239 (0.239)	Loss 0.2074 (0.2074)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.034 (0.040)	Loss 0.2936 (0.2512)	Prec@1 93.750 (93.520)
+ * Prec@1 93.480
+current lr 2.79573e-04
+Epoch: [179][0/196]	Time 0.449 (0.449)	Data 0.306 (0.306)	Loss 0.0101 (0.0101)	Prec@1 100.000 (100.000)
+Epoch: [179][50/196]	Time 0.181 (0.173)	Data 0.001 (0.006)	Loss 0.0108 (0.0161)	Prec@1 100.000 (99.854)
+Epoch: [179][100/196]	Time 0.180 (0.178)	Data 0.000 (0.003)	Loss 0.0102 (0.0159)	Prec@1 100.000 (99.845)
+Epoch: [179][150/196]	Time 0.184 (0.179)	Data 0.000 (0.002)	Loss 0.0107 (0.0153)	Prec@1 100.000 (99.850)
+Test: [0/79]	Time 0.221 (0.221)	Loss 0.2385 (0.2385)	Prec@1 94.531 (94.531)
+Test: [50/79]	Time 0.038 (0.040)	Loss 0.2968 (0.2481)	Prec@1 92.188 (93.520)
+ * Prec@1 93.530
+current lr 2.54717e-04
+Epoch: [180][0/196]	Time 0.425 (0.425)	Data 0.253 (0.253)	Loss 0.0144 (0.0144)	Prec@1 100.000 (100.000)
+Epoch: [180][50/196]	Time 0.147 (0.183)	Data 0.000 (0.005)	Loss 0.0102 (0.0138)	Prec@1 100.000 (99.916)
+Epoch: [180][100/196]	Time 0.181 (0.177)	Data 0.000 (0.003)	Loss 0.0099 (0.0138)	Prec@1 100.000 (99.911)
+Epoch: [180][150/196]	Time 0.180 (0.178)	Data 0.000 (0.002)	Loss 0.0177 (0.0142)	Prec@1 99.609 (99.899)
+Test: [0/79]	Time 0.195 (0.195)	Loss 0.2088 (0.2088)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.038 (0.042)	Loss 0.2822 (0.2483)	Prec@1 93.750 (93.505)
+ * Prec@1 93.480
+current lr 2.31035e-04
+Epoch: [181][0/196]	Time 0.420 (0.420)	Data 0.246 (0.246)	Loss 0.0093 (0.0093)	Prec@1 100.000 (100.000)
+Epoch: [181][50/196]	Time 0.192 (0.187)	Data 0.000 (0.005)	Loss 0.0139 (0.0155)	Prec@1 100.000 (99.831)
+Epoch: [181][100/196]	Time 0.168 (0.178)	Data 0.000 (0.003)	Loss 0.0106 (0.0143)	Prec@1 100.000 (99.880)
+Epoch: [181][150/196]	Time 0.180 (0.179)	Data 0.000 (0.002)	Loss 0.0129 (0.0142)	Prec@1 99.609 (99.881)
+Test: [0/79]	Time 0.232 (0.232)	Loss 0.1584 (0.1584)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.041 (0.043)	Loss 0.2717 (0.2513)	Prec@1 92.969 (93.428)
+ * Prec@1 93.430
+current lr 2.08532e-04
+Epoch: [182][0/196]	Time 0.410 (0.410)	Data 0.234 (0.234)	Loss 0.0223 (0.0223)	Prec@1 99.609 (99.609)
+Epoch: [182][50/196]	Time 0.180 (0.187)	Data 0.000 (0.005)	Loss 0.0146 (0.0142)	Prec@1 100.000 (99.893)
+Epoch: [182][100/196]	Time 0.165 (0.182)	Data 0.000 (0.003)	Loss 0.0095 (0.0146)	Prec@1 100.000 (99.872)
+Epoch: [182][150/196]	Time 0.168 (0.177)	Data 0.000 (0.002)	Loss 0.0145 (0.0144)	Prec@1 100.000 (99.865)
+Test: [0/79]	Time 0.225 (0.225)	Loss 0.2001 (0.2001)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.037 (0.043)	Loss 0.2836 (0.2457)	Prec@1 92.969 (93.536)
+ * Prec@1 93.530
+current lr 1.87213e-04
+Epoch: [183][0/196]	Time 0.418 (0.418)	Data 0.246 (0.246)	Loss 0.0128 (0.0128)	Prec@1 100.000 (100.000)
+Epoch: [183][50/196]	Time 0.187 (0.186)	Data 0.000 (0.005)	Loss 0.0129 (0.0141)	Prec@1 100.000 (99.870)
+Epoch: [183][100/196]	Time 0.190 (0.184)	Data 0.000 (0.003)	Loss 0.0103 (0.0141)	Prec@1 100.000 (99.892)
+Epoch: [183][150/196]	Time 0.167 (0.178)	Data 0.000 (0.002)	Loss 0.0158 (0.0138)	Prec@1 99.609 (99.904)
+Test: [0/79]	Time 0.281 (0.281)	Loss 0.1739 (0.1739)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.039 (0.044)	Loss 0.2943 (0.2488)	Prec@1 92.188 (93.581)
+ * Prec@1 93.600
+current lr 1.67084e-04
+Epoch: [184][0/196]	Time 0.514 (0.514)	Data 0.337 (0.337)	Loss 0.0114 (0.0114)	Prec@1 100.000 (100.000)
+Epoch: [184][50/196]	Time 0.178 (0.189)	Data 0.000 (0.007)	Loss 0.0159 (0.0142)	Prec@1 99.609 (99.831)
+Epoch: [184][100/196]	Time 0.178 (0.185)	Data 0.000 (0.004)	Loss 0.0107 (0.0136)	Prec@1 100.000 (99.869)
+Epoch: [184][150/196]	Time 0.175 (0.180)	Data 0.000 (0.003)	Loss 0.0110 (0.0132)	Prec@1 100.000 (99.899)
+Test: [0/79]	Time 0.219 (0.219)	Loss 0.1797 (0.1797)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.041 (0.041)	Loss 0.2566 (0.2497)	Prec@1 92.969 (93.673)
+ * Prec@1 93.710
+current lr 1.48150e-04
+Epoch: [185][0/196]	Time 0.447 (0.447)	Data 0.269 (0.269)	Loss 0.0107 (0.0107)	Prec@1 100.000 (100.000)
+Epoch: [185][50/196]	Time 0.194 (0.187)	Data 0.000 (0.006)	Loss 0.0150 (0.0127)	Prec@1 99.609 (99.931)
+Epoch: [185][100/196]	Time 0.180 (0.182)	Data 0.000 (0.003)	Loss 0.0173 (0.0129)	Prec@1 100.000 (99.911)
+Epoch: [185][150/196]	Time 0.169 (0.181)	Data 0.000 (0.002)	Loss 0.0204 (0.0130)	Prec@1 99.609 (99.909)
+Test: [0/79]	Time 0.200 (0.200)	Loss 0.1663 (0.1663)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.039 (0.042)	Loss 0.2572 (0.2510)	Prec@1 92.188 (93.490)
+ * Prec@1 93.450
+current lr 1.30416e-04
+Epoch: [186][0/196]	Time 0.419 (0.419)	Data 0.254 (0.254)	Loss 0.0105 (0.0105)	Prec@1 100.000 (100.000)
+Epoch: [186][50/196]	Time 0.179 (0.182)	Data 0.000 (0.005)	Loss 0.0125 (0.0123)	Prec@1 100.000 (99.939)
+Epoch: [186][100/196]	Time 0.182 (0.179)	Data 0.000 (0.003)	Loss 0.0130 (0.0124)	Prec@1 99.609 (99.927)
+Epoch: [186][150/196]	Time 0.184 (0.179)	Data 0.000 (0.002)	Loss 0.0094 (0.0124)	Prec@1 100.000 (99.928)
+Test: [0/79]	Time 0.250 (0.250)	Loss 0.1880 (0.1880)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.038 (0.043)	Loss 0.2716 (0.2493)	Prec@1 92.969 (93.689)
+ * Prec@1 93.720
+current lr 1.13886e-04
+Epoch: [187][0/196]	Time 0.414 (0.414)	Data 0.242 (0.242)	Loss 0.0145 (0.0145)	Prec@1 100.000 (100.000)
+Epoch: [187][50/196]	Time 0.181 (0.179)	Data 0.000 (0.005)	Loss 0.0088 (0.0125)	Prec@1 100.000 (99.923)
+Epoch: [187][100/196]	Time 0.188 (0.177)	Data 0.000 (0.003)	Loss 0.0094 (0.0126)	Prec@1 100.000 (99.919)
+Epoch: [187][150/196]	Time 0.192 (0.179)	Data 0.000 (0.002)	Loss 0.0091 (0.0123)	Prec@1 100.000 (99.922)
+Test: [0/79]	Time 0.223 (0.223)	Loss 0.1829 (0.1829)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.030 (0.039)	Loss 0.2558 (0.2510)	Prec@1 93.750 (93.643)
+ * Prec@1 93.690
+current lr 9.85637e-05
+Epoch: [188][0/196]	Time 0.453 (0.453)	Data 0.266 (0.266)	Loss 0.0181 (0.0181)	Prec@1 99.609 (99.609)
+Epoch: [188][50/196]	Time 0.180 (0.184)	Data 0.000 (0.006)	Loss 0.0090 (0.0137)	Prec@1 100.000 (99.854)
+Epoch: [188][100/196]	Time 0.180 (0.178)	Data 0.000 (0.003)	Loss 0.0103 (0.0129)	Prec@1 100.000 (99.903)
+Epoch: [188][150/196]	Time 0.180 (0.180)	Data 0.000 (0.002)	Loss 0.0093 (0.0129)	Prec@1 100.000 (99.915)
+Test: [0/79]	Time 0.270 (0.270)	Loss 0.1746 (0.1746)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.035 (0.042)	Loss 0.2652 (0.2471)	Prec@1 92.188 (93.581)
+ * Prec@1 93.650
+current lr 8.44534e-05
+Epoch: [189][0/196]	Time 0.456 (0.456)	Data 0.289 (0.289)	Loss 0.0097 (0.0097)	Prec@1 100.000 (100.000)
+Epoch: [189][50/196]	Time 0.184 (0.181)	Data 0.000 (0.006)	Loss 0.0192 (0.0123)	Prec@1 99.609 (99.946)
+Epoch: [189][100/196]	Time 0.174 (0.181)	Data 0.000 (0.003)	Loss 0.0104 (0.0120)	Prec@1 100.000 (99.950)
+Epoch: [189][150/196]	Time 0.178 (0.181)	Data 0.000 (0.002)	Loss 0.0158 (0.0124)	Prec@1 99.609 (99.943)
+Test: [0/79]	Time 0.268 (0.268)	Loss 0.1695 (0.1695)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.035 (0.043)	Loss 0.2639 (0.2489)	Prec@1 92.969 (93.612)
+ * Prec@1 93.630
+current lr 7.15583e-05
+Epoch: [190][0/196]	Time 0.444 (0.444)	Data 0.264 (0.264)	Loss 0.0137 (0.0137)	Prec@1 100.000 (100.000)
+Epoch: [190][50/196]	Time 0.180 (0.173)	Data 0.000 (0.006)	Loss 0.0115 (0.0121)	Prec@1 100.000 (99.946)
+Epoch: [190][100/196]	Time 0.184 (0.177)	Data 0.000 (0.003)	Loss 0.0108 (0.0119)	Prec@1 100.000 (99.950)
+Epoch: [190][150/196]	Time 0.177 (0.177)	Data 0.000 (0.002)	Loss 0.0091 (0.0121)	Prec@1 100.000 (99.943)
+Test: [0/79]	Time 0.232 (0.232)	Loss 0.1716 (0.1716)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.030 (0.042)	Loss 0.2509 (0.2478)	Prec@1 92.969 (93.520)
+ * Prec@1 93.570
+current lr 5.98817e-05
+Epoch: [191][0/196]	Time 0.421 (0.421)	Data 0.250 (0.250)	Loss 0.0261 (0.0261)	Prec@1 99.609 (99.609)
+Epoch: [191][50/196]	Time 0.181 (0.177)	Data 0.000 (0.005)	Loss 0.0100 (0.0125)	Prec@1 100.000 (99.931)
+Epoch: [191][100/196]	Time 0.179 (0.179)	Data 0.000 (0.003)	Loss 0.0104 (0.0121)	Prec@1 100.000 (99.946)
+Epoch: [191][150/196]	Time 0.170 (0.180)	Data 0.000 (0.002)	Loss 0.0126 (0.0122)	Prec@1 100.000 (99.946)
+Test: [0/79]	Time 0.218 (0.218)	Loss 0.1865 (0.1865)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.028 (0.040)	Loss 0.2641 (0.2475)	Prec@1 92.969 (93.704)
+ * Prec@1 93.710
+current lr 4.94265e-05
+Epoch: [192][0/196]	Time 0.463 (0.463)	Data 0.289 (0.289)	Loss 0.0112 (0.0112)	Prec@1 100.000 (100.000)
+Epoch: [192][50/196]	Time 0.166 (0.186)	Data 0.000 (0.006)	Loss 0.0100 (0.0128)	Prec@1 100.000 (99.908)
+Epoch: [192][100/196]	Time 0.176 (0.182)	Data 0.000 (0.003)	Loss 0.0106 (0.0125)	Prec@1 100.000 (99.911)
+Epoch: [192][150/196]	Time 0.179 (0.181)	Data 0.000 (0.002)	Loss 0.0113 (0.0121)	Prec@1 100.000 (99.930)
+Test: [0/79]	Time 0.189 (0.189)	Loss 0.1547 (0.1547)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.041 (0.040)	Loss 0.2632 (0.2474)	Prec@1 92.188 (93.643)
+ * Prec@1 93.660
+current lr 4.01952e-05
+Epoch: [193][0/196]	Time 0.437 (0.437)	Data 0.264 (0.264)	Loss 0.0133 (0.0133)	Prec@1 99.609 (99.609)
+Epoch: [193][50/196]	Time 0.180 (0.187)	Data 0.000 (0.006)	Loss 0.0112 (0.0115)	Prec@1 100.000 (99.939)
+Epoch: [193][100/196]	Time 0.174 (0.180)	Data 0.001 (0.003)	Loss 0.0105 (0.0117)	Prec@1 100.000 (99.934)
+Epoch: [193][150/196]	Time 0.179 (0.181)	Data 0.000 (0.002)	Loss 0.0107 (0.0117)	Prec@1 100.000 (99.948)
+Test: [0/79]	Time 0.231 (0.231)	Loss 0.1806 (0.1806)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.038 (0.043)	Loss 0.2551 (0.2486)	Prec@1 92.969 (93.689)
+ * Prec@1 93.720
+current lr 3.21902e-05
+Epoch: [194][0/196]	Time 0.431 (0.431)	Data 0.262 (0.262)	Loss 0.0119 (0.0119)	Prec@1 100.000 (100.000)
+Epoch: [194][50/196]	Time 0.177 (0.182)	Data 0.000 (0.005)	Loss 0.0132 (0.0125)	Prec@1 100.000 (99.900)
+Epoch: [194][100/196]	Time 0.166 (0.180)	Data 0.000 (0.003)	Loss 0.0101 (0.0124)	Prec@1 100.000 (99.934)
+Epoch: [194][150/196]	Time 0.167 (0.178)	Data 0.000 (0.002)	Loss 0.0090 (0.0124)	Prec@1 100.000 (99.925)
+Test: [0/79]	Time 0.223 (0.223)	Loss 0.1648 (0.1648)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.035 (0.043)	Loss 0.2519 (0.2477)	Prec@1 92.969 (93.673)
+ * Prec@1 93.730
+current lr 2.54133e-05
+Epoch: [195][0/196]	Time 0.435 (0.435)	Data 0.248 (0.248)	Loss 0.0092 (0.0092)	Prec@1 100.000 (100.000)
+Epoch: [195][50/196]	Time 0.159 (0.179)	Data 0.000 (0.005)	Loss 0.0129 (0.0135)	Prec@1 99.609 (99.885)
+Epoch: [195][100/196]	Time 0.181 (0.180)	Data 0.000 (0.003)	Loss 0.0094 (0.0128)	Prec@1 100.000 (99.915)
+Epoch: [195][150/196]	Time 0.180 (0.176)	Data 0.001 (0.002)	Loss 0.0165 (0.0127)	Prec@1 99.609 (99.917)
+Test: [0/79]	Time 0.230 (0.230)	Loss 0.1840 (0.1840)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.035 (0.043)	Loss 0.2483 (0.2483)	Prec@1 93.750 (93.643)
+ * Prec@1 93.670
+current lr 1.98664e-05
+Epoch: [196][0/196]	Time 0.458 (0.458)	Data 0.285 (0.285)	Loss 0.0101 (0.0101)	Prec@1 100.000 (100.000)
+Epoch: [196][50/196]	Time 0.182 (0.187)	Data 0.000 (0.006)	Loss 0.0110 (0.0113)	Prec@1 100.000 (99.962)
+Epoch: [196][100/196]	Time 0.180 (0.181)	Data 0.000 (0.003)	Loss 0.0099 (0.0116)	Prec@1 100.000 (99.942)
+Epoch: [196][150/196]	Time 0.150 (0.176)	Data 0.000 (0.002)	Loss 0.0088 (0.0117)	Prec@1 100.000 (99.938)
+Test: [0/79]	Time 0.224 (0.224)	Loss 0.1733 (0.1733)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.039 (0.043)	Loss 0.2580 (0.2495)	Prec@1 92.188 (93.520)
+ * Prec@1 93.600
+current lr 1.55506e-05
+Epoch: [197][0/196]	Time 0.425 (0.425)	Data 0.246 (0.246)	Loss 0.0154 (0.0154)	Prec@1 99.609 (99.609)
+Epoch: [197][50/196]	Time 0.190 (0.187)	Data 0.000 (0.005)	Loss 0.0097 (0.0117)	Prec@1 100.000 (99.931)
+Epoch: [197][100/196]	Time 0.143 (0.182)	Data 0.000 (0.003)	Loss 0.0091 (0.0117)	Prec@1 100.000 (99.950)
+Epoch: [197][150/196]	Time 0.168 (0.179)	Data 0.000 (0.002)	Loss 0.0122 (0.0116)	Prec@1 100.000 (99.948)
+Test: [0/79]	Time 0.215 (0.215)	Loss 0.1758 (0.1758)	Prec@1 96.094 (96.094)
+Test: [50/79]	Time 0.035 (0.042)	Loss 0.2622 (0.2485)	Prec@1 92.969 (93.581)
+ * Prec@1 93.680
+current lr 1.24672e-05
+Epoch: [198][0/196]	Time 0.424 (0.424)	Data 0.252 (0.252)	Loss 0.0096 (0.0096)	Prec@1 100.000 (100.000)
+Epoch: [198][50/196]	Time 0.180 (0.186)	Data 0.001 (0.005)	Loss 0.0135 (0.0117)	Prec@1 100.000 (99.923)
+Epoch: [198][100/196]	Time 0.144 (0.181)	Data 0.000 (0.003)	Loss 0.0081 (0.0119)	Prec@1 100.000 (99.923)
+Epoch: [198][150/196]	Time 0.181 (0.179)	Data 0.000 (0.002)	Loss 0.0142 (0.0117)	Prec@1 100.000 (99.943)
+Test: [0/79]	Time 0.254 (0.254)	Loss 0.1717 (0.1717)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.037 (0.043)	Loss 0.2600 (0.2480)	Prec@1 92.969 (93.581)
+ * Prec@1 93.640
+current lr 1.06168e-05
+Epoch: [199][0/196]	Time 0.447 (0.447)	Data 0.258 (0.258)	Loss 0.0082 (0.0082)	Prec@1 100.000 (100.000)
+Epoch: [199][50/196]	Time 0.180 (0.187)	Data 0.000 (0.005)	Loss 0.0123 (0.0119)	Prec@1 100.000 (99.939)
+Epoch: [199][100/196]	Time 0.178 (0.181)	Data 0.000 (0.003)	Loss 0.0102 (0.0122)	Prec@1 100.000 (99.934)
+Epoch: [199][150/196]	Time 0.179 (0.181)	Data 0.000 (0.002)	Loss 0.0115 (0.0121)	Prec@1 100.000 (99.938)
+Test: [0/79]	Time 0.206 (0.206)	Loss 0.1683 (0.1683)	Prec@1 95.312 (95.312)
+Test: [50/79]	Time 0.032 (0.039)	Loss 0.2543 (0.2480)	Prec@1 92.969 (93.673)
+ * Prec@1 93.700

@@ -1,0 +1,21 @@
+# 排除所有 .pt 權重檔
+*.pt
+
+# 排除 logs 資料夾
+logs/
+data/
+pretrained_models/
+# save_resnet50_imagenet/
+# save_resnet56/
+# save_resnet56_cifar100/
+# save_temp/
+save_*/
+gradcam_*/
+log_*/
+
+# 排除所有 __pycache__ 資料夾
+__pycache__/
+
+# 排除暫存檔
+*.tmp
+*.log

@@ -1,0 +1,12 @@
+# 忽略 `wandb/` 這個資料夾（用於 TensorBoard 或 Weights & Biases）
+wandb/
+paper2025/
+pretrained/
+
+# 忽略 `__pycache__/`（Python 會自動生成的快取）
+__pycache__/
+*.pyc
+
+*.pt
+*.pth
+*.th
