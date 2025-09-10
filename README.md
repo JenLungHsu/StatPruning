@@ -3,6 +3,12 @@
 
 ## Quick Start (CIFAR-10 / ResNet56)
 
+### 0. Move into Project Folder
+
+``` bash
+cd ./python_resnet_cifar10-master
+```
+
 ### 1. Train & Evaluate Pretrained Model
 
 ``` bash
