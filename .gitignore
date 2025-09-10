@@ -1,0 +1,8 @@
+
+# datasets & large files
+BlockPruning/FindPrunedBlock/data/
+*.zip
+*.tar
+*.tar.gz
+*.pt
+*.pth
