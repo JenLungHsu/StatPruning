@@ -23,9 +23,9 @@ This method achieves a balance between **model compression** and **accuracy pres
 
 ### CIFAR-10 / ResNet110 (Comparison with Other Pruning Methods)
 
-![Comparison Table](./images/cifar10_resnet110_table.png)
+<img src="./images/cifar10_resnet110_table.png" alt="Comparison Table" width="600"/>
 
-![Δ Accuracy vs. Parameter Pruning Rate](./images/cifar10_resnet110_plot.png)
+<img src="./images/cifar10_resnet110_plot.png" alt="Δ Accuracy vs. Parameter Pruning Rate" width="600"/>
 
 ---
 
