@@ -19,6 +19,18 @@ This method achieves a balance between **model compression** and **accuracy pres
 
 ---
 
+## Code Structure
+- **`BlockPruning/`**  
+  - Implements the pruning framework.  
+  - Detects redundant/important layers.  
+  - Contains training and evaluation code for **deepfake detection** tasks.
+
+- **`python_resnet_cifar10-master/`**  
+  - Contains training and evaluation code for **image classification** (e.g., CIFAR-10, CIFAR-100, ImageNet).  
+  - Provides trainer scripts for ResNet and other CNN architectures.  
+
+---
+
 ## Quick Start (CIFAR-10 / ResNet56)
 
 ### 0. Move into Project Folder
