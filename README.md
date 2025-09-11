@@ -19,6 +19,16 @@ This method achieves a balance between **model compression** and **accuracy pres
 
 ---
 
+## Representative Results
+
+### CIFAR-10 / ResNet110 (Comparison with Other Pruning Methods)
+
+![Comparison Table](./images/cifar10_resnet110_table.png)
+
+![Δ Accuracy vs. Parameter Pruning Rate](./images/cifar10_resnet110_plot.png)
+
+---
+
 ## Code Structure
 - **`BlockPruning/`**  
   - Implements the pruning framework.  
@@ -31,7 +41,9 @@ This method achieves a balance between **model compression** and **accuracy pres
 
 ---
 
-## Quick Start (CIFAR-10 / ResNet56)
+## Quick Start 
+
+Take model ResNet56 on dataset CIFAR-10 for example.
 
 ### 0. Move into Project Folder
 
